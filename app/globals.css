@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(//db.onlinewebfonts.com/c/1d7edff6ea893206f5bb1de4bc17c49c?family=AxisStd-Light);
+
+* {
+  font-family: 'AxisStd-Light';
+}
