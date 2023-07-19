@@ -1,12 +1,14 @@
 'use client'
 
+import Image from 'next/image'
+
 // データが存在しないときの画面
 const NotFound = () => {
   return (
     <div className='flex items-center bg-white h-[calc(100vh_-_128px)] py-6 sm:py-8 lg:py-12'>
       <div className='mx-auto max-w-screen-2xl px-4 md:px-8'>
         <div className='relative mx-auto flex h-96 w-full items-center justify-center overflow-hidden rounded-lg bg-gray-100 shadow-lg sm:w-96'>
-          <img src='https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?auto=format&q=75&fit=crop&w=600' loading='lazy' alt='Photo by Connor Botts' className='absolute inset-0 h-full w-full object-cover object-center' />
+          <Image src='https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?auto=format&q=75&fit=crop&w=600' loading='lazy' alt='Photo by Connor Botts' className='absolute inset-0 h-full w-full object-cover object-center' />
           <div className='relative flex flex-col items-center justify-center p-8 md:p-16'>
             <h1 className='mb-2 text-center text-2xl font-bold text-white md:text-3xl lg:text-4xl'>404</h1>
 

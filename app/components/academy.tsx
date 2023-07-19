@@ -1,6 +1,7 @@
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Database } from '@/lib/database.types'
 import { ScrollToTop } from '@/app/components/scroll-to-top'
 
@@ -72,7 +73,7 @@ const Academy = async () => {
             <hr className='my-2 w-2/3' />
           </div>
           <div className='flex flex-row justify-center'>
-            <img src={partnershipSVG.src} width={500} alt='デジタル学歴証明とは？の画像' />
+            <Image src={partnershipSVG.src} width={500} alt='デジタル学歴証明とは？の画像' />
             <div className='flex flex-col items-center justify-center gap-10'>
               <ul className='flex flex-col gap-5 text-lg w-2/3 list-decimal'>
                 <li>教育機関との緊密なパートナーシップを築き、共同作業を通じて最良の成果を追求します。</li>
