@@ -297,7 +297,7 @@ const Educational: NextPage = () => {
             
           </div>
 
-          <p className='text-xs text-gray-400'>学歴を申請すると、<a href='#' className='underline transition duration-100 hover:text-sky-500 active:text-sky-600'>プライバシーポリシー</a>に同意したものとみなされます。</p>
+          <p className='text-xs text-gray-400'>学歴を申請すると、<a href='https://drive.google.com/file/d/1hZA5Bmo2rC6epfJoW_vocYLJeIMH8b7l/view?usp=drive_link' className='underline transition duration-100 hover:text-sky-500 active:text-sky-600'>プライバシーポリシー</a>に同意したものとみなされます。</p>
         </form>
       </div>
     </div>
