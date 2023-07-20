@@ -26,7 +26,7 @@ const Home = async () => {
     <>
       <section className='flex bg-main_0_wallpaper h-screen justify-center items-center gap-20 rounded-b-3xl tracking-wider'>
         <div className='flex justify-center items-center gap-20 flex-wrap flex-col'>
-          <Image src={TitleSVG.src} alt='タイトル画像' />
+          <Image src={TitleSVG.src} width={472} height={72} alt='タイトル画像' />
           <h2 className='text-lg font-thin drop-shadow-sm'>
             就活生に向けた就活の為のシステム<br/>
             最新の技術であなたの学歴をデジタル化してみませんか？<br/>
@@ -39,7 +39,7 @@ const Home = async () => {
           )}
         </div>
         <div className='overflow-hidden'>
-          <Image src={wallpaper_1_PNG.src} className='w-full h-full' alt='壁紙の画像' />
+          <Image src={wallpaper_1_PNG.src} className='w-full h-full' width={400} height={100} alt='壁紙の画像' />
         </div>
       </section>
       <section className='mx-auto w-full pt-20 tracking-wider'>
@@ -48,7 +48,7 @@ const Home = async () => {
           <div className='flex flex-wrap flex-col items-center gap-10'>
             <h2 className='text-4xl font-bold'>デジタル学歴証明とは？</h2>
             <hr className='my-2 w-2/3' />
-            <Image src={secureSVG.src} width={500} alt='デジタル学歴証明とは？の画像' />
+            <Image src={secureSVG.src} width={500} height={100} alt='デジタル学歴証明とは？の画像' />
           </div>
           <div className='flex flex-wrap flex-row gap-10'>
             <div className='flex flex-col items-center gap-5'>
@@ -80,7 +80,7 @@ const Home = async () => {
           <div className='flex flex-wrap flex-col items-center gap-10'>
             <h2 className='text-4xl font-bold'>柔軟性と将来性</h2>
             <hr className='my-2 w-2/3' />
-            <Image src={educationSVG.src} width={500} alt='スムーズの参照と共有の画像' />
+            <Image src={educationSVG.src} width={500} height={100} alt='スムーズの参照と共有の画像' />
           </div>
           <div className='flex flex-wrap flex-row gap-10'>
             <div className='flex flex-col items-center gap-5'>
@@ -111,7 +111,7 @@ const Home = async () => {
       </section>
       {/* サブフッター */}
       <section className='flex bg-gray-100 w-full py-5 px-2 flex-wrap flex-col items-center gap-5 mx-auto'>
-        <Image src={certificationSVG.src} width={150} alt='PDFの画像' />
+        <Image src={certificationSVG.src} width={150} height={100} alt='PDFの画像' />
         <h2 className='text-lg my-1 mx-auto tracking-wider'>PDFファイル1つで簡単に学歴を証明してみよう！</h2>
         {session ? (
             <Link href='/settings/profile'><button className='rounded-lg bg-sky-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-600 transition duration-100 hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base'>マイページへ進む</button></Link>

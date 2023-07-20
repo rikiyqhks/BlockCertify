@@ -73,7 +73,7 @@ const Academy = async () => {
             <hr className='my-2 w-2/3' />
           </div>
           <div className='flex flex-row justify-center'>
-            <Image src={partnershipSVG.src} width={500} alt='デジタル学歴証明とは？の画像' />
+            <Image src={partnershipSVG.src} width={500} height={100} alt='デジタル学歴証明とは？の画像' />
             <div className='flex flex-col items-center justify-center gap-10'>
               <ul className='flex flex-col gap-5 text-lg w-2/3 list-decimal'>
                 <li>教育機関との緊密なパートナーシップを築き、共同作業を通じて最良の成果を追求します。</li>
