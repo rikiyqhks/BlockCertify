@@ -1,28 +1,16 @@
-import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
-import { cookies } from 'next/headers'
 import Link from 'next/link'
 import Image from 'next/image'
-import type { Database } from '@/lib/database.types'
 import { ScrollToTop } from '@/app/components/scroll-to-top'
 
 import partnershipSVG from '@/public/imgs/items/partnership.svg'
 import PhilosophyGraph from './graphs'
 
 const Academy = async () => {
-  const supabase = createServerComponentClient<Database>({
-    cookies,
-  })
-
-  // セッションの取得
-  const {
-    data: { session },
-  } = await supabase.auth.getSession()
-
   return (
     <>
       <section className='mx-auto w-full tracking-wider'>
         {/* アピールポイント#1 */}
-        <div className='py-20 mb-10 flex flex-wrap flex-col items-center gap-10'>
+        <div className='py-20 mb-10 flex flex-wrap flex-col items-center justify-center gap-10 h-screen'>
           <div className='flex flex-wrap flex-col items-center gap-10'>
             <h2 className='text-4xl font-bold'>教育機関に存在するメリット</h2>
             <hr className='my-2 w-2/3' />

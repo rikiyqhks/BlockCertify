@@ -6,16 +6,15 @@ import { Radar } from 'react-chartjs-2'
 const PhilosophyGraph = () => {
   const data = {
     labels: [
-      '透明性',
       '効率',
-      '情報提供数',
-      '正確性',
+      '情報充足度',
       '信頼性',
       '将来性',
+      '作成費用',
     ],
-    datasets: [{
+    datasets: [{  
       label: '従来の紙媒体の学歴証明',
-      data: [65, 60, 90, 80, 80, 65],
+      data: [50, 75, 70, 65, 80],
       fill: true,
       backgroundColor: 'rgba(255, 99, 132, 0.2)',
       borderColor: 'rgb(255, 99, 132)',
@@ -25,7 +24,7 @@ const PhilosophyGraph = () => {
       pointHoverBorderColor: 'rgb(255, 99, 132)'
     }, {
       label: '今後のデジタル学歴証明',
-      data: [95, 100, 75, 95, 95, 95],
+      data: [100, 90, 95, 95, 0],
       fill: true,
       backgroundColor: 'rgba(54, 162, 235, 0.2)',
       borderColor: 'rgb(54, 162, 235)',

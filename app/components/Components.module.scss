@@ -1,0 +1,19 @@
+.heading_animation_left {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.heading_animation_right {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.active {
+  opacity: 1;
+  transition: 2s;
+  transform: translateX(0);
+}
+
+.customTextSize {
+  font-size: 30rem;
+}

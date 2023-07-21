@@ -1,8 +1,11 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import useStore from '@/store'
 import { useEffect } from 'react'
+import { Bars2Icon } from '@heroicons/react/24/outline'
+import FaviconICO from '@/app/favicon.ico'
 import type { Session } from '@supabase/auth-helpers-nextjs'
 import type { Database } from '@/lib/database.types'
 type ProfileType = Database['public']['Tables']['profiles']['Row']
@@ -26,24 +29,34 @@ const Header = ({
   }, [session, setUser, profile])
 
   return (
-    <header className='bg-sky-700 text-white shadow-lg shadow-gray-100'>
-      <div className='py-5 container max-w-screen-sm mx-auto flex items-center justify-between'>
-        <Link href='/' className='font-bold text-xl cursor-pointer'>
-          BlockCertify
-        </Link>
+    <header className='bg-transparent text-dark fixed w-full tracking-wider'>
+      <div className='py-10 px-20 flex items-center justify-between'>
 
-        <div className='text-sm font-bold'>
+        <div className='flex items-center space-x-3'>
+          <Link href='/' className='cursor-pointer'>
+            <Image src={FaviconICO} width={64} height={64} alt='favicon' />
+          </Link>
+          <Link href='/' className='font-semibold text-3xl cursor-pointer'>
+            BlockCertify
+          </Link>
+        </div>
+
+        <div className='text-md font-semibold'>
           {session ? (
-            <div className='flex items-center space-x-5'>
+            <div className='flex items-center space-x-20'>
               <Link href='/settings/profile'>
                 <div>{profile && profile.name ? profile.name + ' さん' : 'ゲスト さん'}</div>
               </Link>
             </div>
           ) : (
-            <div className='flex items-center space-x-5'>
+            <div className='flex items-center space-x-20'>
               <Link href='/auth/login'>ログイン</Link>
               <Link href='/auth/signup'>サインアップ</Link>
               <Link href='/auth/academy'>教育機関用</Link>
+              <Bars2Icon
+                className={'bg-transparent border border-black text-dark w-12 h-12 p-2 rounded-full cursor-pointer'}
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}  // 上までSmoothスクロール
+              />
             </div>
           )}
         </div>
