@@ -117,8 +117,8 @@ const Header = ({
             </ul>
           </nav>
         </section>
-        <section className='flex justify-center items-center fixed w-screen h-screen'>
-          <ul className='flex w-full text-center'>
+        <section className='flex justify-center items-center text-center fixed w-[calc(100vw-17.7px)] h-screen'>
+          <ul className='flex w-screen'>
             {session ? (
               <li className='flex flex-col gap-3 w-1/3'>
                 <p className='text-4xl pb-5'>{profile && profile.name + 'さん'}</p>
@@ -139,7 +139,7 @@ const Header = ({
             </li>
             <li className='flex flex-col gap-3 w-1/3'>
               <p className='text-4xl pb-5'>Others</p>
-              <Link href='https://drive.google.com/file/d/1hZA5Bmo2rC6epfJoW_vocYLJeIMH8b7l/view?usp=drive_link' onClick={() => setOpenMenu(false)}>プライバシーポリシー</Link>
+              <Link href='https://drive.google.com/file/d/1hZA5Bmo2rC6epfJoW_vocYLJeIMH8b7l/view?usp=drive_link' target='_blank' rel='noopener noreferrer' onClick={() => setOpenMenu(false)}>プライバシーポリシー</Link>
               <Link href='/auth/academy' onClick={() => setOpenMenu(false)}>利用規約</Link>
               <Link href='/auth/academy' onClick={() => setOpenMenu(false)}>クッキーポリシー</Link>
               <Link href='/auth/academy' onClick={() => setOpenMenu(false)}>情報セキュリティ方針</Link>
