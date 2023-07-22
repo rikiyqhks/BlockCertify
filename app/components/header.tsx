@@ -55,8 +55,19 @@ const Header = ({
             {session ? (
               <li className='flex items-center space-x-20'>
                 <Link href='/settings/profile'>
-                  <div>{profile && profile.name ? profile.name + ' さん' : 'ゲスト さん'}</div>
+                  {profile && profile.name + ' さん'}
                 </Link>
+                {openMenu ? (
+                  <XMarkIcon
+                    className='bg-transparent border border-black text-black w-12 h-12 p-2 rounded-full cursor-pointer'
+                    onClick={() => menuFunction()}
+                  />
+                ) : (
+                  <Bars2Icon
+                    className='bg-transparent border border-black text-black w-12 h-12 p-2 rounded-full cursor-pointer'
+                    onClick={() => menuFunction()}
+                  />
+                )}
               </li>
             ) : (
               <li className='flex items-center space-x-20'>
@@ -93,13 +104,12 @@ const Header = ({
             </li>
 
             <ul className='text-md font-semibold list-none'>
-              {session ? (
-                <li className='flex items-center space-x-20'>
-                  <Link href='/settings/profile'>
-                    <div>{profile && profile.name ? profile.name + ' さん' : 'ゲスト さん'}</div>
+              <ul className='flex items-center space-x-20'>
+                {session && (
+                  <Link href='/settings/profile' onClick={() => setOpenMenu(false)}>
+                    {profile && profile.name + ' さん'}
                   </Link>
-                </li>
-              ) : (
+                )}
                 <li className='flex items-center space-x-20'>
                   {openMenu ? (
                     <XMarkIcon
@@ -113,37 +123,52 @@ const Header = ({
                     />
                   )}
                 </li>
-              )}
+              </ul>
             </ul>
           </nav>
         </section>
         <section className='flex justify-center items-center text-center fixed w-[calc(100vw-17.7px)] h-screen'>
           <ul className='flex w-screen'>
             {session ? (
-              <li className='flex flex-col gap-3 w-1/3'>
-                <p className='text-4xl pb-5'>{profile && profile.name + 'さん'}</p>
-                <Link href='/settings/profile' onClick={() => setOpenMenu(false)}>マイページ</Link>
-              </li>
+              <>
+                <li className='flex flex-col items-center gap-3 w-1/2'>
+                  <p className='text-4xl pb-5 w-fit'>Account</p>
+                  <Link href='/settings/profile' className='w-fit' onClick={() => setOpenMenu(false)}>マイページ</Link>
+                  <Link href='/settings/educational' className='w-fit' onClick={() => setOpenMenu(false)}>学歴情報の確認 / 申請</Link>
+                  <Link href='/settings/email' className='w-fit' onClick={() => setOpenMenu(false)}>メールアドレスの変更</Link>
+                  <Link href='/settings/password' className='w-fit' onClick={() => setOpenMenu(false)}>パスワードの変更</Link>
+                  <Link href='/settings/logout' className='w-fit' onClick={() => setOpenMenu(false)}>ログアウト</Link>
+                </li>
+                <li className='flex flex-col items-center gap-3 w-1/2'>
+                  <p className='text-4xl pb-5 w-fit'>Others</p>
+                  <Link href='https://drive.google.com/file/d/1hZA5Bmo2rC6epfJoW_vocYLJeIMH8b7l/view?usp=drive_link' target='_blank' rel='noopener noreferrer' onClick={() => setOpenMenu(false)}>プライバシーポリシー</Link>
+                  <Link href='/auth/academy' className='w-fit' onClick={() => setOpenMenu(false)}>利用規約</Link>
+                  <Link href='/auth/academy' className='w-fit' onClick={() => setOpenMenu(false)}>クッキーポリシー</Link>
+                  <Link href='/auth/academy' className='w-fit' onClick={() => setOpenMenu(false)}>情報セキュリティ方針</Link>
+                </li>
+              </>
             ) : (
-              <li className='flex flex-col gap-3 w-1/3'>
-                <p className='text-4xl pb-5'>Account</p>
-                <Link href='/auth/login' onClick={() => setOpenMenu(false)}>ログイン</Link>
-                <Link href='/auth/signup' onClick={() => setOpenMenu(false)}>サインアップ</Link>
-                <Link href='/auth/reset-password' onClick={() => setOpenMenu(false)}>パスワードを忘れた方</Link>
-              </li>
+              <>
+                <li className='flex flex-col items-center gap-3 w-1/3'>
+                  <p className='text-4xl pb-5 w-fit'>Account</p>
+                  <Link href='/auth/login' className='w-fit' onClick={() => setOpenMenu(false)}>ログイン</Link>
+                  <Link href='/auth/signup' className='w-fit' onClick={() => setOpenMenu(false)}>サインアップ</Link>
+                  <Link href='/auth/reset-password' className='w-fit' onClick={() => setOpenMenu(false)}>パスワードを忘れた方</Link>
+                </li>
+                <li className='flex flex-col items-center gap-3 w-1/3'>
+                  <p className='text-4xl pb-5 w-fit'>Works</p>
+                  <Link href='/auth/academy' className='w-fit' onClick={() => setOpenMenu(false)}>教育機関用</Link>
+                  <Link href='/auth/academy' className='w-fit' onClick={() => setOpenMenu(false)}>教育機関アカウントを申し込む</Link>
+                </li>
+                <li className='flex flex-col items-center gap-3 w-1/3'>
+                  <p className='text-4xl pb-5 w-fit'>Others</p>
+                  <Link href='https://drive.google.com/file/d/1hZA5Bmo2rC6epfJoW_vocYLJeIMH8b7l/view?usp=drive_link' className='w-fit' target='_blank' rel='noopener noreferrer' onClick={() => setOpenMenu(false)}>プライバシーポリシー</Link>
+                  <Link href='/auth/academy' className='w-fit' onClick={() => setOpenMenu(false)}>利用規約</Link>
+                  <Link href='/auth/academy' className='w-fit' onClick={() => setOpenMenu(false)}>クッキーポリシー</Link>
+                  <Link href='/auth/academy' className='w-fit' onClick={() => setOpenMenu(false)}>情報セキュリティ方針</Link>
+                </li>
+              </>
             )}
-            <li className='flex flex-col gap-3 w-1/3'>
-              <p className='text-4xl pb-5'>Works</p>
-              <Link href='/auth/academy' onClick={() => setOpenMenu(false)}>教育機関用</Link>
-              <Link href='/auth/academy' onClick={() => setOpenMenu(false)}>教育機関アカウントを申し込む</Link>
-            </li>
-            <li className='flex flex-col gap-3 w-1/3'>
-              <p className='text-4xl pb-5'>Others</p>
-              <Link href='https://drive.google.com/file/d/1hZA5Bmo2rC6epfJoW_vocYLJeIMH8b7l/view?usp=drive_link' target='_blank' rel='noopener noreferrer' onClick={() => setOpenMenu(false)}>プライバシーポリシー</Link>
-              <Link href='/auth/academy' onClick={() => setOpenMenu(false)}>利用規約</Link>
-              <Link href='/auth/academy' onClick={() => setOpenMenu(false)}>クッキーポリシー</Link>
-              <Link href='/auth/academy' onClick={() => setOpenMenu(false)}>情報セキュリティ方針</Link>
-            </li>
           </ul>
         </section>
         <section className='fixed bottom-5 text-center w-full'>

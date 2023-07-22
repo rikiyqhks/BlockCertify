@@ -1,5 +1,6 @@
 'use client'
 
+import styles from '@/app/components/Components.module.scss'
 import {
   UserCircleIcon,
   AcademicCapIcon,
@@ -44,7 +45,7 @@ const SettingsLayout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname()
 
   return (
-    <div className='grid grid-cols-4 gap-3 my-10'>
+    <div className={`grid grid-cols-4 gap-3 my-10 ${styles.customMargin}`}>
       <div className='col-span-1 text-sm space-y-1 font-bold flex flex-col'>
         {subNavigation.map((item, index) => (
           <Link href={item.href} key={index}>

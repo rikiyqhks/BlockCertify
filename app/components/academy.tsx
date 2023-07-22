@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { CursorArrowRaysIcon } from '@heroicons/react/24/outline'
 import { ScrollToTop } from '@/app/components/scroll-to-top'
-
 import partnershipSVG from '@/public/imgs/items/partnership.svg'
 import PhilosophyGraph from './graphs'
 

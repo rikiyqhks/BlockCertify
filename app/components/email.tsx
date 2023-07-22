@@ -8,6 +8,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import Loading from '@/app/loading'
 import * as z from 'zod'
 import type { Database } from '@/lib/database.types'
+import useStore from '@/store'
 type Schema= z.infer<typeof schema>
 
 // 入力データの検証ルールを定義
@@ -16,11 +17,12 @@ const schema = z.object({
 })
 
 // メールアドレス変更
-const Email = ({ email }: { email: string }) => {
+const Email = () => {
   const router = useRouter()
   const supabase = createClientComponentClient<Database>()
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState('')
+  const { user } = useStore()
 
   const {
     register,
@@ -85,7 +87,7 @@ const Email = ({ email }: { email: string }) => {
             type='text'
             className='border rounded-md w-1/2 py-2 px-3 focus:outline-none focus:border-sky-600'
             id='currentEmail'
-            value={email}
+            value={user.email}
             readOnly
           />
         </div>

@@ -31,7 +31,7 @@ const Profile = () => {
   } = useForm({
     // 初期値
     defaultValues: {
-      name: user.name ? user.name : '',
+      name: user.name!,
     },
     // 入力値の検証
     resolver: zodResolver(schema),

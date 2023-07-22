@@ -1,11 +1,11 @@
 import { cookies } from 'next/headers'
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { redirect } from 'next/navigation'
-import Email from '@/app/components/email'
+import ConfirmDone from '@/app/components/confirm-done'
+
 import type { Database } from '@/lib/database.types'
 
-// メールアドレス変更ページ
-const EmailPage = async () => {
+const ConfirmDonePage = async () => {
   const supabase = createServerComponentClient<Database>({
     cookies,
   })
@@ -20,7 +20,7 @@ const EmailPage = async () => {
     redirect('/auth/login')
   }
 
-  return <Email />
+  return <ConfirmDone />
 }
 
-export default EmailPage
+export default ConfirmDonePage
