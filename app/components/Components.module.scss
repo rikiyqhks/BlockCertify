@@ -1,27 +1,52 @@
+// 左からフェードイン
 .heading_animation_left {
   opacity: 0;
   transform: translateX(-100px);
 }
 
+// 右からフェードイン
 .heading_animation_right {
   opacity: 0;
   transform: translateX(100px);
 }
 
+// 起動状態の監視
 .active {
   opacity: 1;
   transition: 2s;
   transform: translateX(0);
 }
 
+// カスタム文字サイズ #1
 .customTextSize_xl {
   font-size: 10rem;
 }
 
+// カスタム文字サイズ #2
 .customTextSize_2xl {
   font-size: 20rem;
 }
 
+// カスタム文字サイズ #3
 .customTextSize_3xl {
   font-size: 30rem;
+}
+
+// 🍔メニュー
+.drawerMenu {
+  width: 0;
+  height: 0;
+  position: fixed;
+  top: 0;
+  color: white;
+  background-color: rgb(34, 35, 36);
+  z-index: -100;
+  opacity: 0;
+  transition: 0.5s;
+  &.open {
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    opacity: 1;
+  }
 }

@@ -27,7 +27,7 @@ export const ScrollToTop: FC = () => {
 
   return (
     <ChevronUpIcon
-      className={`${showButton ? 'block' : 'hidden'} bg-gray-300 text-gray-500 w-14 h-14 p-2 rounded-full cursor-pointer fixed right-6 bottom-6 shadow-md hover:bg-gray-200`}
+      className={`${showButton ? 'block' : 'hidden'} animate-bounce bg-gray-300 text-gray-500 w-14 h-14 p-2 rounded-full cursor-pointer fixed right-6 bottom-6 shadow-md hover:bg-gray-200`}
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}  // 上までSmoothスクロール
     />
   )

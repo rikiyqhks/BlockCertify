@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { CursorArrowRaysIcon } from '@heroicons/react/24/outline'
 import { ScrollToTop } from '@/app/components/scroll-to-top'
 
 import partnershipSVG from '@/public/imgs/items/partnership.svg'
@@ -10,7 +11,7 @@ const Academy = async () => {
     <>
       <section className='mx-auto w-full tracking-wider'>
         {/* アピールポイント#1 */}
-        <div className='py-20 mb-10 flex flex-wrap flex-col items-center justify-center gap-10 h-screen'>
+        <div className='py-20 flex flex-wrap flex-col items-center justify-center gap-10 h-screen'>
           <div className='flex flex-wrap flex-col items-center gap-10'>
             <h2 className='text-4xl font-bold'>教育機関に存在するメリット</h2>
             <hr className='my-2 w-2/3' />
@@ -39,10 +40,10 @@ const Academy = async () => {
               </ul>
             </div>
           </div>
-          <Link href='/auth/signup'><button className='rounded-lg bg-sky-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-600 transition duration-100 hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base'>教育機関アカウントを申し込む</button></Link>
+          <Link href='/auth/signup'><button className='rounded-lg bg-sky-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-600 transition duration-100 hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base'>教育機関アカウントを申し込む<CursorArrowRaysIcon className='inline' width={30} /></button></Link>
         </div>
         {/* アピールポイント#2 */}
-        <div className='bg-gray-50 p-5 my-10 flex flex-wrap flex-col items-center gap-10'>
+        <div className='bg-gray-50 py-20 flex flex-wrap flex-col items-center gap-10'>
           <div className='flex flex-wrap flex-col items-center gap-10'>
             <h2 className='text-4xl font-bold'>理念体系</h2>
             <hr className='my-2 w-2/3' />
@@ -55,7 +56,7 @@ const Academy = async () => {
           <PhilosophyGraph />
         </div>
         {/* アピールポイント#3 */}
-        <div className='p-5 my-10 flex flex-wrap flex-col items-center gap-10'>
+        <div className='p-20 flex flex-wrap flex-col items-center gap-10'>
           <div className='flex flex-wrap flex-col items-center gap-10'>
             <h2 className='text-4xl font-bold'>パートナーシップとコミュニティの構築</h2>
             <hr className='my-2 w-2/3' />
@@ -68,7 +69,7 @@ const Academy = async () => {
                 <li>教育コミュニティを活性化させ、学生と教育機関のニーズに適したサービスを提供します。</li>
                 <li>ユーザーのデータを最高水準のセキュリティで保護し、情報の漏洩や不正アクセスを防止します。</li>
               </ul>
-              <Link href='/auth/signup'><button className='rounded-lg bg-sky-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-600 transition duration-100 hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base'>教育機関アカウントを申し込む</button></Link>
+              <Link href='/auth/signup'><button className='rounded-lg bg-sky-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-600 transition duration-100 hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base'>教育機関アカウントを申し込む<CursorArrowRaysIcon className='inline' width={30} /></button></Link>
             </div>
           </div>
         </div>
