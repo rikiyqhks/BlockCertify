@@ -29,7 +29,7 @@ const Header = ({
   }, [session, setUser, profile])
 
   return (
-    <header className='bg-transparent text-dark fixed w-full tracking-wider'>
+    <header className='bg-transparent text-dark fixed w-full tracking-wider z-50'>
       <div className='py-10 px-20 flex items-center justify-between'>
 
         <div className='flex items-center space-x-3'>

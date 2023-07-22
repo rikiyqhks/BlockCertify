@@ -30,12 +30,11 @@ const MainApeal: FC = () => {
   useIntersectionObserver([ref1, ref2, ref3], showElements)
 
   return (
-    <section className='mx-auto w-full py-20 tracking-wider'>
+    <section className='mx-auto w-full tracking-wider'>
       {/* アピールポイント#1 */}
-      <div className='mb-20 flex flex-wrap flex-col items-center gap-10 relative'>
+      <div className='py-20 flex flex-wrap flex-col items-center gap-10 relative'>
         <FadeAnimation>
-          <div className={`absolute left-52 font-black text-slate-100 ${styles.customTextSize}`}>0</div>
-          <div className={`absolute right-52 font-black text-slate-100 ${styles.customTextSize}`}>1</div>
+          <div className={`absolute right-52 bottom-0 font-black text-slate-100 ${styles.customTextSize_2xl}`}>01</div>
         </FadeAnimation>
         <div className={`flex flex-wrap flex-col items-center gap-10 ${styles.heading_animation_left}`} ref={ref1}>
           <h2 className='text-4xl font-bold'>デジタル学歴証明とは？</h2>
@@ -43,7 +42,7 @@ const MainApeal: FC = () => {
           <Image src={secureSVG.src} width={500} height={100} alt='デジタル学歴証明とは？の画像' />
         </div>
         <FadeAnimation>
-          <div className='flex flex-wrap flex-row gap-10'>
+          <div className='flex flex-wrap flex-row gap-10 z-40 relative'>
             <div className='flex flex-col items-center gap-5'>
               <h2 className='text-xl font-bold'>【信頼性と安全性】</h2>
               <p className='text-lg w-96'>
@@ -70,10 +69,9 @@ const MainApeal: FC = () => {
         </FadeAnimation>
       </div>
       {/* アピールポイント#2 */}
-      <div className='bg-gray-50 py-20 flex flex-wrap flex-col items-center gap-10'>
+      <div className='bg-gray-50 py-20 flex flex-wrap flex-col items-center gap-10 relative'>
         <FadeAnimation>
-          <div className={`absolute left-52 font-black text-slate-100 ${styles.customTextSize}`}>0</div>
-          <div className={`absolute right-52 font-black text-slate-100 ${styles.customTextSize}`}>2</div>
+          <div className={`absolute left-52 bottom-0 font-black text-slate-100 ${styles.customTextSize_2xl}`}>02</div>
         </FadeAnimation>
         <div className={`flex flex-wrap flex-col items-center gap-10 ${styles.heading_animation_right}`} ref={ref2}>
           <h2 className='text-4xl font-bold'>柔軟性と将来性</h2>
@@ -81,7 +79,7 @@ const MainApeal: FC = () => {
           <Image src={educationSVG.src} width={500} height={100} alt='スムーズの参照と共有の画像' />
         </div>
         <FadeAnimation>
-          <div className='flex flex-wrap flex-row gap-10'>
+          <div className='flex flex-wrap flex-row gap-10 z-40 relative'>
             <div className='flex flex-col items-center gap-5'>
               <h2 className='text-xl font-bold'>【簡単な操作】</h2>
               <p className='text-lg w-96'>
@@ -100,12 +98,11 @@ const MainApeal: FC = () => {
         </FadeAnimation>
       </div>
       {/* アピールポイント#3 */}
-      <div className='pt-20 flex flex-wrap flex-col items-center gap-10'>
+      <div className='py-20 flex flex-wrap flex-col items-center gap-10 relative'>
         <FadeAnimation>
-          <div className={`absolute left-52 font-black text-slate-100 ${styles.customTextSize}`}>0</div>
-          <div className={`absolute right-52 font-black text-slate-100 ${styles.customTextSize}`}>3</div>
+          <div className={`absolute right-52 bottom-0 font-black text-slate-100 ${styles.customTextSize_2xl}`}>03</div>
         </FadeAnimation>
-        <div className={`flex flex-wrap flex-col items-center gap-10 ${styles.heading_animation_left}`} ref={ref3}>
+        <div className={`flex flex-wrap flex-col items-center gap-10 z-40 relative ${styles.heading_animation_left}`} ref={ref3}>
           <h2 className='text-4xl font-bold'>BlockCertify でできること</h2>
           <p className='text-lg'>「使用感を一度拝見したい」という方に向けて、BlockCertifyでできることを動画で紹介しています。</p>
           <hr className='my-2 w-2/3' />
