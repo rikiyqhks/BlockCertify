@@ -13,13 +13,13 @@ import * as z from 'zod'
 import InputFormType from '@/lib/inputForm.types'
 import type { NextPage } from 'next'
 import useStore from '@/store'
-import { getExistData } from '@/app/hooks/getExistData'
+import { getSchoolData } from '../hooks/getSchoolData'
 type Schema = z.infer<typeof schema>
 
 // 電話番号の正規表現
 const phoneRegex = new RegExp(
   /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/
-);
+)
 
 // 入力データの検証ルールを定義
 const schema = z.object({
@@ -46,7 +46,6 @@ const Educational: NextPage = () => {
 
   const router = useRouter()
   const { user } = useStore()
-  const [educationalData, setEducationalData] = useState<any>()
 
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState('')
@@ -66,13 +65,9 @@ const Educational: NextPage = () => {
   const date = now.getDate()
   const YYYYMMDD = `${year}年${month}月${date}日`
 
-  useMemo(() => {
-    const getData = async () => {
-      const data = await getExistData(user.id)
-      setEducationalData(data)
-    }
-    getData()
-  }, [])
+  // useMemo(() => {
+  //   getSchoolData().then((data) => console.log(data))
+  // }, [])
 
   const {
     register,
@@ -303,19 +298,19 @@ const Educational: NextPage = () => {
             <div className='my-3 text-sm text-red-500'>{errors.phonenumber?.message}</div>
           </div>
 
-          <div className='flex items-center justify-between sm:col-span-2'>
+          <div className='flex flex-col items-center justify-center gap-5 sm:col-span-2'>
+            <p className='text-xs text-gray-400'>学歴を申請すると、<Link href='https://drive.google.com/file/d/1hZA5Bmo2rC6epfJoW_vocYLJeIMH8b7l/view?usp=sharing' className='underline transition duration-100 hover:text-sky-500 active:text-sky-600' target='_blank' rel='noopener noreferrer'>プライバシーポリシー</Link>と<Link href='https://drive.google.com/file/d/1HMVSIHMEa6X9Xkgwghf8aFoSjLdK2FMh/view?usp=sharing' className='underline transition duration-100 hover:text-sky-500 active:text-sky-600' target='_blank' rel='noopener noreferrer'>利用規約</Link>に同意したものとみなされます。</p>
+
             {/* 次へ進むボタン */}
             {loading ? (
               <Loading />
             ) : (
-              <button type='submit' className='inline-block rounded-lg bg-sky-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-600 transition duration-100 hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base'>次へ進む</button>
+              <button type='submit' className='rounded-lg bg-sky-500 px-10 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-600 transition duration-100 hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base'>次へ進む</button>
             )}
             {/* メッセージ */}
             {message && <span className='text-sm text-red-500'>{message}</span>}
             
           </div>
-
-          <p className='text-xs text-gray-400'>学歴を申請すると、<Link href='https://drive.google.com/file/d/1hZA5Bmo2rC6epfJoW_vocYLJeIMH8b7l/view?usp=drive_link' className='underline transition duration-100 hover:text-sky-500 active:text-sky-600' target='_blank' rel='noopener noreferrer'>プライバシーポリシー</Link>に同意したものとみなされます。</p>
         </form>
       </div>
     </div>
