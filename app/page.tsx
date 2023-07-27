@@ -22,6 +22,7 @@ const Home = async () => {
   return (
     <>
       <section className='flex bg-main_0_wallpaper bg-no-repeat bg-cover h-screen justify-center items-center gap-20 rounded-b-3xl tracking-widest'>
+        <Link href='/settings/educational/login'>ああああああああ</Link>
         <div className='flex justify-center items-start gap-20 flex-wrap flex-col w-8/12'>
           <Image src={TitleSVG.src} width={472} height={72} alt='タイトル画像' />
           <div className='flex flex-col gap-3 text-lg font-thin drop-shadow-sm'>
