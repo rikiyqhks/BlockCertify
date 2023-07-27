@@ -9,6 +9,7 @@ import Link from 'next/link'
 import Loading from '@/app/loading'
 import * as z from 'zod'
 import type { Database } from '@/lib/database.types'
+import type { NextPage } from 'next'
 type Schema= z.infer<typeof schema>
 
 // 入力データの検証ルールを定義
@@ -18,7 +19,7 @@ const schema = z.object({
 })
 
 // ログインページ
-const Login = () => {
+const Login: NextPage = () => {
   const router = useRouter()
   const supabase = createClientComponentClient<Database>()
   const [loading, setLoading] = useState(false)

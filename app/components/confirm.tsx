@@ -9,9 +9,10 @@ import { useRecoilValue } from 'recoil'
 import { inputState } from '@/states/atoms/inputAtom'
 import InputFormType from '@/lib/inputForm.types'
 import supabase from '@/lib/supabase'
+import type { NextPage } from 'next'
 
 // 学歴情報申請確認
-const Confirm = () => {
+const Confirm: NextPage = () => {
   const input = useRecoilValue(inputState)
   const router = useRouter()
   const [loading, setLoading] = useState(false)

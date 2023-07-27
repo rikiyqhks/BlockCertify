@@ -1,13 +1,14 @@
 'use client'
 
 import { useIntersectionObserver } from '@/app/hooks/use-intersection-observer'
-import { FC, useRef } from 'react'
+import { useRef } from 'react'
 import styles from '@/app/components/Components.module.scss'
 import Image from 'next/image'
 import YoutubeMovie from '@/app/components/youtube'
 import { FadeAnimation } from '@/app/components/scroll-fade-in'
 import secureSVG from '@/public/imgs/items/secure.svg'
 import educationSVG from '@/public/imgs/items/education.svg'
+import type { NextPage } from 'next'
 
 // カスタムフックに渡すコールバック関数
 const showElements = (entries: IntersectionObserverEntry[]) => {
@@ -20,7 +21,7 @@ const showElements = (entries: IntersectionObserverEntry[]) => {
   })
 }
 
-const MainApeal: FC = () => {
+const MainApeal: NextPage = () => {
 
   const ref1 = useRef<HTMLHeadingElement>(null)
   const ref2 = useRef<HTMLHeadingElement>(null)

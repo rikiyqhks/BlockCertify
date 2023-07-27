@@ -42,7 +42,7 @@ const schema = z.object({
 })
 
 // 登録済学歴情報
-const Educational: NextPage = () => {
+const EducationalForm: NextPage = () => {
 
   const router = useRouter()
   const { user } = useStore()
@@ -317,4 +317,4 @@ const Educational: NextPage = () => {
   )
 }
 
-export default Educational
+export default EducationalForm

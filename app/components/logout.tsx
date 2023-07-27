@@ -5,9 +5,10 @@ import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
 import Loading from '@/app/loading'
 import type { Database } from '@/lib/database.types'
+import type { NextPage } from 'next'
 
 // ログアウト
-const Logout = () => {
+const Logout: NextPage = () => {
   const router = useRouter()
   const supabase = createClientComponentClient<Database>()
   const [loading, setLoading] = useState(false)

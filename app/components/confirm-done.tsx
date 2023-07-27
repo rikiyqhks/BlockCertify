@@ -2,9 +2,10 @@
 
 import Link from 'next/link'
 import { DocumentCheckIcon } from '@heroicons/react/24/outline'
+import type { NextPage } from 'next'
 
 // 登録学歴情報申請完了
-const ConfirmDone = () => {
+const ConfirmDone: NextPage = () => {
 
   return (
     <div className='flex flex-col justify-center items-center'>

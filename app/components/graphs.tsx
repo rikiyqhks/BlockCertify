@@ -2,8 +2,9 @@
 
 import 'chart.js/auto'
 import { Radar } from 'react-chartjs-2'
+import type { NextPage } from 'next'
 
-const PhilosophyGraph = () => {
+const PhilosophyGraph: NextPage = () => {
   const data = {
     labels: [
       '効率',

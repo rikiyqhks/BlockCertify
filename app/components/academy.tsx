@@ -4,8 +4,9 @@ import { CursorArrowRaysIcon } from '@heroicons/react/24/outline'
 import { ScrollToTop } from '@/app/components/scroll-to-top'
 import partnershipSVG from '@/public/imgs/items/partnership.svg'
 import PhilosophyGraph from './graphs'
+import type { NextPage } from 'next'
 
-const Academy = async () => {
+const Academy: NextPage = () => {
   return (
     <>
       <section className='mx-auto w-full tracking-wider'>
