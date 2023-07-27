@@ -160,8 +160,6 @@ const Header = ({
                       <p className='text-4xl pb-5 w-fit'>Others</p>
                       <Link href='https://drive.google.com/file/d/1hZA5Bmo2rC6epfJoW_vocYLJeIMH8b7l/view?usp=drive_link' target='_blank' rel='noopener noreferrer' onClick={() => setOpenMenu(false)}>プライバシーポリシー</Link>
                       <Link href='/auth/academy' className='w-fit' onClick={() => setOpenMenu(false)}>利用規約</Link>
-                      <Link href='/auth/academy' className='w-fit' onClick={() => setOpenMenu(false)}>クッキーポリシー</Link>
-                      <Link href='/auth/academy' className='w-fit' onClick={() => setOpenMenu(false)}>情報セキュリティ方針</Link>
                     </li>
                   </>
                 ) : (

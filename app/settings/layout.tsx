@@ -59,7 +59,7 @@ const SettingsLayout = ({ children }: { children: React.ReactNode }) => {
     default:
       return (
         <div className={`grid grid-cols-4 gap-3 my-10 ${styles.customMargin}`}>
-          <div className='col-span-1 text-sm space-y-1 font-bold flex flex-col'>
+          <aside className='col-span-1 text-sm space-y-1 font-bold flex flex-col self-start sticky top-36'>
             {subNavigation.map((item, index) => (
               <Link href={item.href} key={index}>
                 <div
@@ -72,8 +72,8 @@ const SettingsLayout = ({ children }: { children: React.ReactNode }) => {
                 </div>
               </Link>
             ))}
-          </div>
-          <div className='col-span-3'>{children}</div>
+          </aside>
+          <main className='col-span-3'>{children}</main>
         </div>
       )
   }

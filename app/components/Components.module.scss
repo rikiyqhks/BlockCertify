@@ -55,3 +55,34 @@
     opacity: 1;
   }
 }
+
+
+.table_info {
+  width: 70%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+}
+
+.table_info_th,
+.table_info_td{
+  padding: 16px;
+  font-weight: normal;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.table_info_th{
+  background-color: #CDEAFF;
+}
+.table_info_td{
+  background-color: #fbf9f9;
+}
+
+.table_info_list{
+  list-style: none;
+  padding: 0;
+}
+.table_info_list_list{
+  margin: 5px 0;
+}
