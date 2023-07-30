@@ -1,14 +1,13 @@
 'use client'
 
 import { useState } from 'react'
-import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { useRouter } from 'next/navigation'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { getSchoolData } from '../hooks/getSchoolData'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { v4 as uuidv4 } from 'uuid'
 import Loading from '@/app/loading'
 import * as z from 'zod'
-import type { Database } from '@/lib/database.types'
 import type { NextPage } from 'next'
 type Schema= z.infer<typeof schema>
 
@@ -20,7 +19,6 @@ const schema = z.object({
 
 const EducationalLogin: NextPage = () => {
   const router = useRouter()
-  const supabase = createClientComponentClient<Database>()
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState('')
 
@@ -36,21 +34,15 @@ const EducationalLogin: NextPage = () => {
   })
 
   // 送信
-  const onSubmit: SubmitHandler<Schema> = async (data) => {
+  const onSubmit: SubmitHandler<Schema> = async (input) => {
     setLoading(true)
 
     try {
       // ログイン
-      const { data } = await getSchoolData(data.ID, data.password)
-
-      // エラーチェック
-      if (error) {
-        setMessage('エラーが発生しました。' + error.message)
-        return
-      }
+      await getSchoolData(input.ID, input.password)
 
       // トップぺージに遷移
-      router.push(`/settings/educational/`)
+      router.push(`/settings/educational/${uuidv4()}?id=${input.ID}`)
     } catch (error) {
       setMessage('エラーが発生しました。' + error)
       return
