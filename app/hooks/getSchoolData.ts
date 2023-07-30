@@ -2,6 +2,7 @@ import supabase from '@/lib/supabase'
 
 const API_KEY = '128|3DfJjj7S44IAl95kicOLC5axPZIL7MgaqpZoqqWi'
 
+// 学校コードAPIを利用する
 export const getSchoolDataAPI = async () => {
   const res = await fetch('https://api.edu-data.jp/api/v1/school', {
     method: 'GET',
