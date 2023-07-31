@@ -1,9 +1,9 @@
-import Link from 'next/link'
 import Image from 'next/image'
 import { CursorArrowRaysIcon } from '@heroicons/react/24/outline'
 import { ScrollToTop } from '@/app/components/scroll-to-top'
 import partnershipSVG from '@/public/imgs/items/partnership.svg'
-import PhilosophyGraph from './graphs'
+import PhilosophyGraph from '@/app/components/graphs'
+import { Button } from '@/app/components/button'
 import type { NextPage } from 'next'
 
 const Academy: NextPage = () => {
@@ -40,7 +40,7 @@ const Academy: NextPage = () => {
               </ul>
             </div>
           </div>
-          <Link href='/auth/signup'><button className='rounded-lg bg-sky-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-600 transition duration-100 hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base'>教育機関アカウントを申し込む<CursorArrowRaysIcon className='inline' width={30} /></button></Link>
+          <Button href='/settings/educational/login' text={'教育機関アカウントを申し込む'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
         </div>
         {/* アピールポイント#2 */}
         <div className='bg-gray-50 py-20 flex flex-wrap flex-col items-center gap-10'>
@@ -69,7 +69,7 @@ const Academy: NextPage = () => {
                 <li>教育コミュニティを活性化させ、学生と教育機関のニーズに適したサービスを提供します。</li>
                 <li>ユーザーのデータを最高水準のセキュリティで保護し、情報の漏洩や不正アクセスを防止します。</li>
               </ul>
-              <Link href='/auth/signup'><button className='rounded-lg bg-sky-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-600 transition duration-100 hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base'>教育機関アカウントを申し込む<CursorArrowRaysIcon className='inline' width={30} /></button></Link>
+              <Button href='/settings/educational/login' text={'教育機関アカウントを申し込む'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
             </div>
           </div>
         </div>

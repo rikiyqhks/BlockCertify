@@ -15,6 +15,7 @@ export const getSchoolDataAPI = async () => {
   return res.json()
 }
 
+// 教育機関ログイン
 export const getSchoolData = async (id: string, password: string) => {
   
   const { data, error: requestError } = await supabase
@@ -23,10 +24,20 @@ export const getSchoolData = async (id: string, password: string) => {
   .match({ 'id': id, 'code': password })
 
   // エラーチェック
-  if (requestError) {
-    console.log(requestError)
-    return
-  }
+  if (requestError) return requestError.code
+
+  return data
+}
+
+// 教育機関プロフィールの取得
+export const showSchoolData = async (id: string) => {
+  const { data, error: requestError } = await supabase
+  .from('schools')
+  .select()
+  .filter('id', 'in', `(${id})`)
+
+  // エラーチェック
+  if (requestError) return requestError.code
 
   return data
 }

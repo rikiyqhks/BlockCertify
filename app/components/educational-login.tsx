@@ -9,6 +9,7 @@ import { v4 as uuidv4 } from 'uuid'
 import Loading from '@/app/loading'
 import * as z from 'zod'
 import type { NextPage } from 'next'
+import { AuthenticationError } from '@/app/classes/AuthenticationError'
 type Schema= z.infer<typeof schema>
 
 // 入力データの検証ルールを定義
@@ -39,13 +40,17 @@ const EducationalLogin: NextPage = () => {
 
     try {
       // ログイン
-      await getSchoolData(input.ID, input.password)
+      const data = await getSchoolData(input.ID, input.password)
+
+      if (data === '22P02') throw new AuthenticationError(data)
 
       // トップぺージに遷移
       router.push(`/settings/educational/${uuidv4()}?id=${input.ID}`)
     } catch (error) {
-      setMessage('エラーが発生しました。' + error)
-      return
+      if (error instanceof AuthenticationError) {
+        setMessage('IDまたはパスワードが違います。')
+        throw error
+      }
     } finally {
       setLoading(false)
       router.refresh()

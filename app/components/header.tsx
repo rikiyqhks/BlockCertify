@@ -173,7 +173,7 @@ const Header = ({
                     <li className='flex flex-col items-center gap-3 w-1/3'>
                       <p className='text-4xl pb-5 w-fit'>Works</p>
                       <Link href='/auth/academy' className='w-fit' onClick={() => setOpenMenu(false)}>教育機関用</Link>
-                      <Link href='/auth/academy' className='w-fit' onClick={() => setOpenMenu(false)}>教育機関アカウントを申し込む</Link>
+                      <Link href='/settings/educational/login' className='w-fit' onClick={() => setOpenMenu(false)}>教育機関アカウントを申し込む</Link>
                     </li>
                     <li className='flex flex-col items-center gap-3 w-1/3'>
                       <p className='text-4xl pb-5 w-fit'>Others</p>

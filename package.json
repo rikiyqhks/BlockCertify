@@ -20,6 +20,7 @@
     "@types/uuid": "^9.0.2",
     "autoprefixer": "10.4.14",
     "chat.js": "^1.0.2",
+    "daisyui": "^3.5.0",
     "encoding": "^0.1.13",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",

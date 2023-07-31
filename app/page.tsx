@@ -1,7 +1,7 @@
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
-import Link from 'next/link'
 import Image from 'next/image'
+import { Button } from '@/app/components/button'
 import { CursorArrowRaysIcon } from '@heroicons/react/24/outline'
 import type { Database } from '@/lib/database.types'
 import { ScrollToTop } from '@/app/components/scroll-to-top'
@@ -19,10 +19,11 @@ const Home = async () => {
     data: { session },
   } = await supabase.auth.getSession()
 
+  console.log(typeof(<CursorArrowRaysIcon />))
+
   return (
     <>
       <section className='flex bg-main_0_wallpaper bg-no-repeat bg-cover h-screen justify-center items-center gap-20 rounded-b-3xl tracking-widest'>
-        <Link href='/settings/educational/login'>ああああああああ</Link>
         <div className='flex justify-center items-start gap-20 flex-wrap flex-col w-8/12'>
           <Image src={TitleSVG.src} width={472} height={72} alt='タイトル画像' />
           <div className='flex flex-col gap-3 text-lg font-thin drop-shadow-sm'>
@@ -31,9 +32,9 @@ const Home = async () => {
             <h2>電子履歴書が暗号化され、安全な状態で保管されます。</h2>
           </div>
           {session ? (
-            <Link href='/settings/profile'><button className='rounded-lg bg-sky-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-600 transition duration-100 hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base'>マイページへ進む</button></Link>
+            <Button href='/settings/profile' text={'マイページへ進む'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
           ) : (
-            <Link href='/auth/signup'><button className='rounded-lg bg-sky-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-600 transition duration-100 inline-block hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base'>無料でサインアップ<CursorArrowRaysIcon className='inline' width={30} /></button></Link>
+            <Button href='/auth/signup' text={'無料でサインアップ'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
           )}
         </div>
       </section>
@@ -43,9 +44,9 @@ const Home = async () => {
         <Image src={certificationSVG.src} width={150} height={100} alt='PDFの画像' />
         <h2 className='text-lg my-1 mx-auto tracking-wider'>PDFファイル1つで簡単に学歴を証明してみよう！</h2>
         {session ? (
-          <Link href='/settings/profile'><button className='rounded-lg bg-sky-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-600 transition duration-100 hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base'>マイページへ進む</button></Link>
+          <Button href='/settings/profile' text={'マイページへ進む'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
         ) : (
-          <Link href='/auth/signup'><button className='rounded-lg bg-sky-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-600 transition duration-100 hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base'>無料でサインアップ</button></Link>
+          <Button href='/auth/signup' text={'無料でサインアップ'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
         )}
       </section>
       <ScrollToTop />
