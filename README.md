@@ -2,7 +2,7 @@
 
 ```
 必要なライブラリのインストール
-"npm i @chakra-ui/react @supabase/supabase-js @heroicons/react @hookform/resolvers @supabase/auth-helpers-nextjs @types/uuid encoding react-hook-form uuid zod zustand react-youtube recoil chat.js react-chartjs-2 react-intersection-observer styled-components sass"
+"npm i @chakra-ui/react @supabase/supabase-js @heroicons/react @hookform/resolvers @supabase/auth-helpers-nextjs @types/uuid encoding react-hook-form uuid zod zustand react-youtube recoil chart.js react-chartjs-2 react-intersection-observer styled-components sass"
 ```
 
 ## _<span style="color: 00FF00">概要</span>_

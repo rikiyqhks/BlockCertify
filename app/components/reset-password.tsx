@@ -63,11 +63,11 @@ const ResetPassword: NextPage = () => {
 
   return (
     <div className='flex max-w-[400px] w-1/2 mx-auto h-[calc(100vh-128px)] flex-col justify-center'>
-      <div className='text-center font-bold text-xl mb-10'>パスワードを忘れた場合</div>
+      <h1 className='text-center font-bold text-xl mb-10'>パスワードを忘れた場合</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         {/* メールアドレス */}
         <div className='mb-5'>
-          <div className='text-sm mb-1 font-bold'>メールアドレス</div>
+          <div className='text-slate-500 font-thin text-sm mb-3'>パスワードを変更するには、アカウントに登録されたメールアドレスを入力してください。</div>
           <input
             type='email'
             className='w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-sky-600 transition duration-100 focus:ring'

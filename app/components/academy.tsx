@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { CursorArrowRaysIcon } from '@heroicons/react/24/outline'
 import { ScrollToTop } from '@/app/components/scroll-to-top'
 import partnershipSVG from '@/public/imgs/items/partnership.svg'
@@ -41,6 +42,7 @@ const Academy: NextPage = () => {
             </div>
           </div>
           <Button href='/settings/educational/login' text={'教育機関アカウントを申し込む'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
+          <Link href='/settings/educational/login' className='underline hover:text-slate-600'>既にアカウントをお持ちの方はこちら</Link>
         </div>
         {/* アピールポイント#2 */}
         <div className='bg-gray-50 py-20 flex flex-wrap flex-col items-center gap-10'>
@@ -70,6 +72,7 @@ const Academy: NextPage = () => {
                 <li>ユーザーのデータを最高水準のセキュリティで保護し、情報の漏洩や不正アクセスを防止します。</li>
               </ul>
               <Button href='/settings/educational/login' text={'教育機関アカウントを申し込む'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
+              <Link href='/settings/educational/login' className='underline hover:text-slate-600'>既にアカウントをお持ちの方はこちら</Link>
             </div>
           </div>
         </div>

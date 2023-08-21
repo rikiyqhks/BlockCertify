@@ -69,7 +69,7 @@ const EducationalLogin: NextPage = () => {
               <label htmlFor='ID' className='mb-2 inline-block text-sm text-gray-800 sm:text-base'>ID</label>
               <input
                 type='text'
-                className='w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring'
+                className='w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-sky-600 transition duration-100 focus:ring'
                 placeholder='ID'
                 id='ID'
                 {...register('ID', { required: true })}
@@ -82,7 +82,7 @@ const EducationalLogin: NextPage = () => {
               <label htmlFor='password' className='mb-2 inline-block text-sm text-gray-800 sm:text-base'>パスワード</label>
               <input
                 type='password'
-                className='w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring'
+                className='w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-sky-600 transition duration-100 focus:ring'
                 placeholder='パスワード'
                 id='password'
                 {...register('password', { required: true })}

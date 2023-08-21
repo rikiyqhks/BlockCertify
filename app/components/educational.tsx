@@ -6,7 +6,7 @@ import Link from 'next/link'
 import type { NextPage } from 'next'
 import useStore from '@/store'
 import { getExistData } from '@/app/hooks/getExistData'
-import Loading from '../loading'
+import Loading from '@/app/loading'
 
 // 登録済学歴情報
 const Educational: NextPage = () => {
