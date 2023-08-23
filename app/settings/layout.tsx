@@ -44,7 +44,7 @@ const subNavigation = [
 const SettingsLayout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname()
   const pathchk = () => {
-    if (pathname.includes('/settings/educational/form') || pathname.includes('/settings/educational/confirm') || pathname.includes('/settings/educational/login')) {
+    if (pathname.includes('/settings/educational/form') || pathname.includes('/settings/educational/confirm') || pathname.includes('/settings/educational/login') || pathname.includes('/settings/educational/application')) {
       return true
     } else {
       return false

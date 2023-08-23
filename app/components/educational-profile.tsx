@@ -26,6 +26,7 @@ const EducationalProfile: NextPage = () => {
     }
     getRequests()
   }, [data])
+  console.log(searchParams)
 
   return (
       <>

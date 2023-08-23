@@ -41,7 +41,7 @@ const Academy: NextPage = () => {
               </ul>
             </div>
           </div>
-          <Button href='/settings/educational/login' text={'教育機関アカウントを申し込む'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
+          <Button href='/settings/educational/application' text={'教育機関アカウントを申し込む'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
           <Link href='/settings/educational/login' className='underline hover:text-slate-600'>既にアカウントをお持ちの方はこちら</Link>
         </div>
         {/* アピールポイント#2 */}
@@ -71,7 +71,7 @@ const Academy: NextPage = () => {
                 <li>教育コミュニティを活性化させ、学生と教育機関のニーズに適したサービスを提供します。</li>
                 <li>ユーザーのデータを最高水準のセキュリティで保護し、情報の漏洩や不正アクセスを防止します。</li>
               </ul>
-              <Button href='/settings/educational/login' text={'教育機関アカウントを申し込む'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
+              <Button href='/settings/educational/application' text={'教育機関アカウントを申し込む'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
               <Link href='/settings/educational/login' className='underline hover:text-slate-600'>既にアカウントをお持ちの方はこちら</Link>
             </div>
           </div>
