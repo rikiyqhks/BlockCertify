@@ -5,6 +5,7 @@ import { NextPage } from 'next'
 import { showSchoolData } from '@/app/hooks/getSchoolData'
 import { getRequestData } from '@/app/hooks/getRequestData'
 import { useSearchParams } from 'next/navigation'
+import Link from 'next/link'
 import Loading from '@/app/loading'
 
 const EducationalProfile: NextPage = () => {
@@ -26,7 +27,6 @@ const EducationalProfile: NextPage = () => {
     }
     getRequests()
   }, [data])
-  console.log(searchParams)
 
   return (
       <>
@@ -39,19 +39,19 @@ const EducationalProfile: NextPage = () => {
                 <h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900'>{data[0].name}</h1>
                 <p className='lg:w-2/3 mx-auto leading-relaxed text-base'>新しい申請が来ています。</p>
               </div>
-              {/* <div className='flex flex-wrap -m-2'>
-                {requests.map((request: any) => (
-                  <div className='p-2 lg:w-1/3 md:w-1/2 w-full'>
+              <div className='flex flex-wrap -m-2'>
+                {requests && requests.map((request: any) => (
+                  <Link className='p-2 lg:w-1/3 md:w-1/2 w-full' key={request.uid} href={`/settings/educational/requests?id=${id}&uid=${request.uid}`}>
                     <div className='h-full flex items-center border-gray-200 border p-4 rounded-lg'>
                       <img alt='team' className='w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4' src='https://dummyimage.com/80x80'/>
                       <div className='flex-grow'>
                         <h2 className='text-gray-900 title-font font-medium'>{request.firstName}</h2>
-                        <p className='text-gray-500'>UI Designer</p>
+                        <p className='text-gray-500'>{request.firstname + request.lastname}</p>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
-              </div> */}
+              </div>
             </div>
           </section>
         )}

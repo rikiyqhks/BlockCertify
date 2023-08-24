@@ -8,7 +8,7 @@ import {
   KeyIcon,
   ArrowLeftOnRectangleIcon,
 } from '@heroicons/react/24/outline'
-import { usePathname } from 'next/navigation'
+import { usePathname, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 
 // ナビゲーション
@@ -43,8 +43,11 @@ const subNavigation = [
 // レイアウト
 const SettingsLayout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname()
+  const searchParams = useSearchParams()
+  const id = searchParams.get('id')
+
   const pathchk = () => {
-    if (pathname.includes('/settings/educational/form') || pathname.includes('/settings/educational/confirm') || pathname.includes('/settings/educational/login') || pathname.includes('/settings/educational/application')) {
+    if (pathname.includes('/settings/educational/form') || pathname.includes('/settings/educational/confirm') || pathname.includes('/settings/educational/login') || pathname.includes('/settings/educational/application') || id) {
       return true
     } else {
       return false
