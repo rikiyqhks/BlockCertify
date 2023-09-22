@@ -1,13 +1,76 @@
+'use client'
+
+import { useState } from 'react'
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CursorArrowRaysIcon } from '@heroicons/react/24/outline'
 import { ScrollToTop } from '@/app/components/scroll-to-top'
+import { useForm, SubmitHandler } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
 import partnershipSVG from '@/public/imgs/items/partnership.svg'
 import PhilosophyGraph from '@/app/components/graphs'
 import { Button } from '@/app/components/button'
+import Loading from '@/app/loading'
+import * as z from 'zod'
+import type { Database } from '@/lib/database.types'
 import type { NextPage } from 'next'
+type Schema= z.infer<typeof schema>
+
+// 入力データの検証ルールを定義
+const schema = z.object({
+  university: z.string().min(2, { message: '2文字以上入力する必要があります。' }),
+  email: z.string().email({ message: 'メールアドレスの形式ではありません。' }),
+  tel: z.string().min(5, { message: '5文字以上入力する必要があります。' }),
+})
 
 const Academy: NextPage = () => {
+  const router = useRouter()
+  const supabase = createClientComponentClient<Database>()
+  const [loading, setLoading] = useState(false)
+  const [message, setMessage] = useState('')
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    // 初期値
+    defaultValues: { university: '', email: '', tel: '' },
+    // 入力値の検証
+    resolver: zodResolver(schema),
+  })
+
+  // 送信
+  const onSubmit: SubmitHandler<Schema> = async (data) => {
+    setLoading(true)
+
+    try {
+      // ログイン
+      // const { error } = await supabase.auth.signInWithPassword({
+      //   university: data.university,
+      //   email: data.email,
+      //   tel: data.tel,
+      // })
+
+      // エラーチェック
+      // if (error) {
+      //   setMessage('エラーが発生しました。' + error.message)
+      //   return
+      // }
+
+      // トップぺージに遷移
+      router.push('/')
+    } catch (error) {
+      setMessage('エラーが発生しました。' + error)
+      return
+    } finally {
+      setLoading(false)
+      router.refresh()
+    }
+  }
+
   return (
     <>
       <section className='mx-auto w-full tracking-wider'>
@@ -41,7 +104,7 @@ const Academy: NextPage = () => {
               </ul>
             </div>
           </div>
-          <Button href='/settings/educational/application' text={'教育機関アカウントを申し込む'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
+          <Button href='#application' text={'教育機関アカウントを申し込む'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
           <Link href='/settings/educational/login' className='underline hover:text-slate-600'>既にアカウントをお持ちの方はこちら</Link>
         </div>
         {/* アピールポイント#2 */}
@@ -71,10 +134,73 @@ const Academy: NextPage = () => {
                 <li>教育コミュニティを活性化させ、学生と教育機関のニーズに適したサービスを提供します。</li>
                 <li>ユーザーのデータを最高水準のセキュリティで保護し、情報の漏洩や不正アクセスを防止します。</li>
               </ul>
-              <Button href='/settings/educational/application' text={'教育機関アカウントを申し込む'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
+              <Button href='#application' text={'教育機関アカウントを申し込む'} icon={<CursorArrowRaysIcon className='inline' width={30} />}/>
               <Link href='/settings/educational/login' className='underline hover:text-slate-600'>既にアカウントをお持ちの方はこちら</Link>
             </div>
           </div>
+        </div>
+        {/* アカウントの申し込み */}
+        <div className='bg-gray-50 py-20 flex flex-wrap flex-col items-center gap-10' id='application'>
+          <div className='flex flex-wrap flex-col items-center gap-10'>
+            <h2 className='text-4xl font-bold'>資料を請求する</h2>
+            <hr className='my-2 w-2/3' />
+          </div>
+          <form onSubmit={handleSubmit(onSubmit)} className='flex justify-center flex-col w-1/3'>
+            {/* 学校名 */}
+            <div className='mb-3'>
+              <input
+                type='text'
+                className='w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-sky-600 transition duration-100 focus:ring'
+                placeholder='学校名'
+                id='university'
+                {...register('university', { required: true })}
+              />
+              <div className='my-3 text-center text-sm text-red-500'>{errors.university?.message}</div>
+            </div>
+
+            {/* メールアドレス */}
+            <div className='mb-3'>
+              <input
+                type='email'
+                className='w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-sky-600 transition duration-100 focus:ring'
+                placeholder='メールアドレス'
+                id='email'
+                {...register('email', { required: true })}
+              />
+              <div className='my-3 text-center text-sm text-red-500'>{errors.email?.message}</div>
+            </div>
+
+            {/* 電話番号 */}
+            <div className='mb-5'>
+              <input
+                type='tel'
+                className='w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-sky-600 transition duration-100 focus:ring'
+                placeholder='電話番号'
+                id='tel'
+                {...register('tel', { required: true })}
+              />
+              <div className='my-3 text-center text-sm text-red-500'>{errors.tel?.message}</div>
+            </div>
+
+            <p className='text-center mt-1 mb-5'>個人情報の利用について、<Link href='https://drive.google.com/file/d/1hZA5Bmo2rC6epfJoW_vocYLJeIMH8b7l/view?usp=sharing' target='_blank' rel='noopener noreferrer' className='underline hover:text-slate-600'>プライバシーポリシー</Link>を必ずご確認ください。</p>
+
+            {/* 申し込みボタン */}
+            <div className='mb-5 w-1/3 mx-auto'>
+              {loading ? (
+                <Loading />
+              ) : (
+                <button
+                  type='submit'
+                  className='w-full rounded-lg bg-sky-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-sky-600 transition duration-100 hover:bg-sky-600 focus-visible:ring active:bg-sky-700 md:text-base'
+                >
+                  資料を請求する
+                </button>
+              )}
+            </div>
+          </form>
+
+          {/* メッセージ */}
+          {message && <div className='my-5 text-center text-sm text-red-500'>{message}</div>}
         </div>
       </section>
       <ScrollToTop />

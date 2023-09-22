@@ -1,17 +1,20 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { NextPage } from 'next'
 import { Button } from '@/app/components/button'
 import { CursorArrowRaysIcon } from '@heroicons/react/24/outline'
 import { showSchoolData } from '@/app/hooks/getSchoolData'
 import { getRequestData } from '@/app/hooks/getRequestData'
 import { useSearchParams } from 'next/navigation'
+import { ArrowPathIcon, InboxStackIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import Loading from '@/app/loading'
 
 const EducationalRequest: NextPage = () => {
   const searchParams = useSearchParams()
+  const router = useRouter()
   const id = searchParams.get('id')
   const uid = searchParams.get('uid')
   const [data, setData] = useState<any>()
@@ -36,20 +39,23 @@ const EducationalRequest: NextPage = () => {
     getRequests()
   }, [data])
 
-  console.log(request)
-
   return (
       <>
         {!data && !request ? (
           <Loading />
         ) : (
-          <section className='text-gray-600 body-font'>
+          <section className='text-gray-600 body-font bg-gray-100 h-[calc(100vh-60px)]'>
             <div className='container px-5 py-24 mx-auto'>
-              <div className='flex flex-wrap -m-2'>
+              <div className='flex flex-col text-center w-full mt-20'>
                 {request && (
-                  <div className='h-full flex items-center border-gray-200 border p-4 rounded-lg'>
-                    <img alt='team' className='w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4' src='https://dummyimage.com/80x80'/>
-                    <div className='flex-grow'>
+                  <div>
+                    <h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900'>{data[0].name}</h1>
+                    <div className='flex flex-row lg:w-2/3 mx-auto leading-relaxed text-base justify-center gap-2 align-middle'>
+                      <InboxStackIcon width={30} />
+                      <p><span className='underline hover:cursor-pointer' onClick={() => router.back()}>受信トレイ</span> / {request.studentid}</p>
+                    </div>
+                    <div className='h-full flex flex-col items-center border-gray-200 border p-4 rounded-lg bg-gray-50 gap-3'>
+                      <img alt='team' className='w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full' src='https://dummyimage.com/80x80'/>
                       <h2 className='text-gray-900 title-font font-medium'>{request.firstname + request.lastname}</h2>
                       <p className='text-gray-500'>{request.submitdate}</p>
                       <p className='text-gray-500'>{request.dob}</p>
