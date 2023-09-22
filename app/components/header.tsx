@@ -63,7 +63,7 @@ const Header = ({
                 <Link href='/' className='cursor-pointer'>
                   <Image src={FaviconICO} width={64} height={64} alt='favicon' />
                 </Link>
-                <Link href='/' className='font-semibold text-3xl cursor-pointer text-black'>
+                <Link href='/' className='font-semibold text-2xl cursor-pointer text-black sm:text-3xl'>
                   BlockCertify
                 </Link>
               </li>
@@ -88,9 +88,9 @@ const Header = ({
                   </li>
                 ) : (
                   <li className='flex items-center space-x-20'>
-                    <Link href='/auth/login'>ログイン</Link>
-                    <Link href='/auth/signup'>サインアップ</Link>
-                    <Link href='/auth/academy'>教育機関用</Link>
+                    <Link href='/auth/login' className='hidden lg:block'>ログイン</Link>
+                    <Link href='/auth/signup' className='hidden lg:block'>サインアップ</Link>
+                    <Link href='/auth/academy' className='hidden lg:block'>教育機関用</Link>
                     {openMenu ? (
                       <XMarkIcon
                         className='bg-transparent border border-black text-black w-12 h-12 p-2 rounded-full cursor-pointer'
@@ -147,7 +147,7 @@ const Header = ({
             <section className='flex justify-center items-center text-center fixed w-[calc(100vw-17.7px)] h-screen'>
               <ul className='flex w-screen'>
                 {session ? (
-                  <>
+                  <div className='flex flex-col items-center gap-10 w-full md:flex-row'>
                     <li className='flex flex-col items-center gap-3 w-1/2'>
                       <p className='text-4xl pb-5 w-fit'>Account</p>
                       <Link href='/settings/profile' className='w-fit' onClick={() => setOpenMenu(false)}>マイページ</Link>
@@ -161,9 +161,9 @@ const Header = ({
                       <Link href='https://drive.google.com/file/d/1hZA5Bmo2rC6epfJoW_vocYLJeIMH8b7l/view?usp=drive_link' target='_blank' rel='noopener noreferrer' onClick={() => setOpenMenu(false)}>プライバシーポリシー</Link>
                       <Link href='/auth/academy' className='w-fit' onClick={() => setOpenMenu(false)}>利用規約</Link>
                     </li>
-                  </>
+                  </div>
                 ) : (
-                  <>
+                  <div className='flex flex-col items-center gap-10 w-full md:flex-row'>
                     <li className='flex flex-col items-center gap-3 w-1/3'>
                       <p className='text-4xl pb-5 w-fit'>Account</p>
                       <Link href='/auth/login' className='w-fit' onClick={() => setOpenMenu(false)}>ログイン</Link>
@@ -180,7 +180,7 @@ const Header = ({
                       <Link href='https://drive.google.com/file/d/1hZA5Bmo2rC6epfJoW_vocYLJeIMH8b7l/view?usp=sharing' className='w-fit' target='_blank' rel='noopener noreferrer' onClick={() => setOpenMenu(false)}>プライバシーポリシー</Link>
                       <Link href='https://drive.google.com/file/d/1HMVSIHMEa6X9Xkgwghf8aFoSjLdK2FMh/view?usp=sharing' className='w-fit' target='_blank' rel='noopener noreferrer' onClick={() => setOpenMenu(false)}>利用規約</Link>
                     </li>
-                  </>
+                  </div>
                 )}
               </ul>
             </section>

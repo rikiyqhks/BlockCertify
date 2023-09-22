@@ -1,0 +1,2 @@
+V	240914011159Z		00	unknown	/C=JP/ST=Osaka/O=OCA/OU=JikeiGakuen/CN=BlockCertify_CA/emailAddress=2104240029mr@edu.oca.ac.jp
+V	240914012336Z		01	unknown	/C=JP/ST=Osaka/O=OCA/OU=JikeiGakuen/CN=BlockCertify_CA_Leaf/emailAddress=2104240029mr@edu.oca.ac.jp
