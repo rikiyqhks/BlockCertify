@@ -5,9 +5,14 @@ import Youtube from 'react-youtube'
 import type { NextPage } from 'next'
 
 const YoutubeMovie: NextPage = () => {
+  const opts= {
+    height: '200',
+    width: '350',
+  };
   return (
-    <Youtube 
+    <Youtube
       videoId='lxd1NZlbomA'
+      opts={opts}
     />
   );
 }

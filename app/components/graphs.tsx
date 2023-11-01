@@ -11,11 +11,11 @@ const PhilosophyGraph: NextPage = () => {
       '情報充足度',
       '信頼性',
       '将来性',
-      '作成費用',
+      '費用対効果',
     ],
     datasets: [{  
       label: '従来の紙媒体の学歴証明',
-      data: [50, 75, 70, 65, 80],
+      data: [50, 75, 70, 65, 75],
       fill: true,
       backgroundColor: 'rgba(255, 99, 132, 0.2)',
       borderColor: 'rgb(255, 99, 132)',
@@ -25,7 +25,7 @@ const PhilosophyGraph: NextPage = () => {
       pointHoverBorderColor: 'rgb(255, 99, 132)'
     }, {
       label: '今後のデジタル学歴証明',
-      data: [100, 90, 95, 95, 0],
+      data: [100, 90, 95, 95, 90],
       fill: true,
       backgroundColor: 'rgba(54, 162, 235, 0.2)',
       borderColor: 'rgb(54, 162, 235)',

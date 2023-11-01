@@ -31,29 +31,29 @@ const MainApeal: NextPage = () => {
   useIntersectionObserver([ref1, ref2, ref3], showElements)
 
   return (
-    <section className='mx-auto w-full tracking-wider'>
+    <section className='mx-auto w-screen lg:w-full tracking-wider'>
       {/* アピールポイント#1 */}
       <div className='py-20 flex flex-wrap flex-col items-center gap-10 relative'>
         <FadeAnimation>
           <div className={`absolute right-52 bottom-0 font-black text-slate-100 ${styles.customTextSize_2xl}`}>01</div>
         </FadeAnimation>
         <div className={`flex flex-wrap flex-col items-center gap-10 ${styles.heading_animation_left}`} ref={ref1}>
-          <h2 className='text-4xl font-bold'>デジタル学歴証明とは？</h2>
+          <h2 className='text-2xl lg:text-3xl xl:text-4xl font-bold'>デジタル学歴証明とは？</h2>
           <hr className='my-2 w-2/3' />
-          <Image src={secureSVG.src} width={500} height={100} alt='デジタル学歴証明とは？の画像' />
+          <Image className='w-80 lg:w-96' src={secureSVG.src} width={500} height={100} alt='デジタル学歴証明とは？の画像' />
         </div>
         <FadeAnimation>
           <div className='flex flex-wrap flex-row gap-10 z-40 relative'>
             <div className='flex flex-col items-center gap-5'>
               <h2 className='text-xl font-bold'>【信頼性と安全性】</h2>
-              <p className='text-lg w-96'>
+              <p className='text-md px-5 lg:text-lg lg:px-0 w-96'>
                 ブロックチェーン技術を活用することで、学歴情報の改ざんや不正な変更を防ぎます。<br />
                 デジタル証明書により、学歴情報の信頼性が保証され、検証可能な証拠となります。
               </p>
             </div>
             <div className='flex flex-col items-center gap-5'>
               <h2 className='text-xl font-bold'>【透明性と信用】</h2>
-              <p className='text-lg w-96'>
+              <p className='text-md px-5 lg:text-lg lg:px-0 w-96'>
                 学生が自身の学歴情報を登録し、検証できるため、信頼度が向上します。<br />
                 また、教育機関との連携により、正確な学歴情報を提供します。<br />
                 就職や進学の際に、信頼される学歴情報を提供することができます。
@@ -61,7 +61,7 @@ const MainApeal: NextPage = () => {
             </div>
             <div className='flex flex-col items-center gap-5'>
               <h2 className='text-xl font-bold'>【プライバシーとセキュリティ】</h2>
-              <p className='text-lg w-96'>
+              <p className='text-md px-5 lg:text-lg lg:px-0 w-96'>
                 個人のプライバシーを尊重し、情報は暗号化されて保存されます。<br />
                 ユーザーのデータは安全に保護され、不正アクセスや漏洩のリスクが最小限に抑えられます。
               </p>
@@ -75,22 +75,22 @@ const MainApeal: NextPage = () => {
           <div className={`absolute left-52 bottom-0 font-black text-slate-100 ${styles.customTextSize_2xl}`}>02</div>
         </FadeAnimation>
         <div className={`flex flex-wrap flex-col items-center gap-10 ${styles.heading_animation_right}`} ref={ref2}>
-          <h2 className='text-4xl font-bold'>柔軟性と将来性</h2>
+          <h2 className='text-2xl lg:text-3xl xl:text-4xl font-bold'>柔軟性と将来性</h2>
           <hr className='my-2 w-2/3' />
-          <Image src={educationSVG.src} width={500} height={100} alt='スムーズの参照と共有の画像' />
+          <Image className='w-80 lg:w-96' src={educationSVG.src} width={500} height={100} alt='スムーズの参照と共有の画像' />
         </div>
         <FadeAnimation>
           <div className='flex flex-wrap flex-row gap-10 z-40 relative'>
             <div className='flex flex-col items-center gap-5'>
               <h2 className='text-xl font-bold'>【簡単な操作】</h2>
-              <p className='text-lg w-96'>
+              <p className='text-md px-5 lg:text-lg lg:px-0 w-96'>
                 シンプルで使いやすいインターフェースにより、学歴情報の登録や検証が簡単に行えます。<br />
                 ユーザーフレンドリーなデザインと直感的な操作性で、誰でも利用できます。
               </p>
             </div>
             <div className='flex flex-col items-center gap-5'>
               <h2 className='text-xl font-bold'>【未来の学歴管理】</h2>
-              <p className='text-lg w-96'>
+              <p className='text-md px-5 lg:text-lg lg:px-0 w-96'>
                 Block Certifyは、従来の学歴管理方法を革新し、デジタル化の未来に対応しています。<br />
                 ブロックチェーンの利点を最大限に活用し、教育業界の進化を推進します。
               </p>
@@ -101,11 +101,11 @@ const MainApeal: NextPage = () => {
       {/* アピールポイント#3 */}
       <div className='py-20 flex flex-wrap flex-col items-center gap-10 relative'>
         <FadeAnimation>
-          <div className={`absolute right-52 bottom-0 font-black text-slate-100 ${styles.customTextSize_2xl}`}>03</div>
+          <div className={`absolute right-52 bottom-0 font-black text-slate-100 ${styles.customTextSize_2xl} ${styles.minusZ}`}>03</div>
         </FadeAnimation>
         <div className={`flex flex-wrap flex-col items-center gap-10 z-40 relative ${styles.heading_animation_left}`} ref={ref3}>
-          <h2 className='text-4xl font-bold'>BlockCertify でできること</h2>
-          <p className='text-lg'>「使用感を一度拝見したい」という方に向けて、BlockCertifyでできることを動画で紹介しています。</p>
+          <h2 className='text-2xl lg:text-3xl xl:text-4xl font-bold'>BlockCertify でできること</h2>
+          <p className='text-md px-5 lg:text-lg lg:px-0'>「使用感を一度拝見したい」という方に向けて、BlockCertifyでできることを動画で紹介しています。</p>
           <hr className='my-2 w-2/3' />
         </div>
         <FadeAnimation>

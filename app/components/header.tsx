@@ -57,48 +57,48 @@ const Header = ({
       return (
         <React.Fragment>
           <header className='bg-transparent text-dark fixed w-full tracking-wider z-50'>
-            <nav className='py-10 px-20 flex items-center justify-between'>
+            <nav className='w-screen py-5 px-2 lg:py-10 lg:px-20 flex items-center justify-between'>
     
               <li className='flex items-center space-x-3 list-none'>
                 <Link href='/' className='cursor-pointer'>
-                  <Image src={FaviconICO} width={64} height={64} alt='favicon' />
+                  <Image className='w-10 lg:w-20' src={FaviconICO} width={64} height={64} alt='favicon' />
                 </Link>
-                <Link href='/' className='font-semibold text-2xl cursor-pointer text-black sm:text-3xl'>
+                <Link href='/' className='font-semibold text-sm cursor-pointer text-black lg:text-3xl'>
                   BlockCertify
                 </Link>
               </li>
     
               <ul className='text-md font-semibold list-none'>
                 {session ? (
-                  <li className='flex items-center space-x-20'>
-                    <Link href='/settings/profile'>
+                  <li className='flex items-center space-x-3 lg:space-x-20'>
+                    <Link className='text-xs' href='/settings/profile'>
                       {profile && profile.name + ' さん'}
                     </Link>
                     {openMenu ? (
                       <XMarkIcon
-                        className='bg-transparent border border-black text-black w-12 h-12 p-2 rounded-full cursor-pointer'
+                        className='bg-transparent border border-black text-black w-9 h-9 p-1 lg:w-12 lg:h-12 lg:p-2 rounded-full cursor-pointer'
                         onClick={() => menuFunction()}
                       />
                     ) : (
                       <Bars2Icon
-                        className='bg-transparent border border-black text-black w-12 h-12 p-2 rounded-full cursor-pointer'
+                        className='bg-transparent border border-black text-black w-9 h-9 p-1 lg:w-12 lg:h-12 lg:p-2 rounded-full cursor-pointer'
                         onClick={() => menuFunction()}
                       />
                     )}
                   </li>
                 ) : (
-                  <li className='flex items-center space-x-20'>
+                  <li className='flex items-center space-x-3 lg:space-x-20'>
                     <Link href='/auth/login' className='hidden lg:block'>ログイン</Link>
                     <Link href='/auth/signup' className='hidden lg:block'>サインアップ</Link>
                     <Link href='/auth/academy' className='hidden lg:block'>教育機関用</Link>
                     {openMenu ? (
                       <XMarkIcon
-                        className='bg-transparent border border-black text-black w-12 h-12 p-2 rounded-full cursor-pointer'
+                        className='bg-transparent border border-black text-black w-9 h-9 p-1 lg:w-12 lg:h-12 lg:p-2 rounded-full cursor-pointer'
                         onClick={() => menuFunction()}
                       />
                     ) : (
                       <Bars2Icon
-                        className='bg-transparent border border-black text-black w-12 h-12 p-2 rounded-full cursor-pointer'
+                        className='bg-transparent border border-black text-black w-9 h-9 p-1 lg:w-12 lg:h-12 lg:p-2 rounded-full cursor-pointer'
                         onClick={() => menuFunction()}
                       />
                     )}

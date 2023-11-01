@@ -1,3 +1,25 @@
+// breakpointの設定
+$mq-breakpoints: (
+    xl: 1440px,
+    lg: 1280px,
+    md: 1024px,
+    tb: 768px,
+    sm: 576px,
+    xs: 414px) !default;
+
+// Media Queryの設定
+@mixin mq($breakpoint: md, $rule: min, $subtraction: false) {
+  $breakpoint: map_get($mq-breakpoints, $breakpoint);
+
+  @if $rule==max and $subtraction {
+      $breakpoint: $breakpoint - 0.0625;
+  }
+
+  @media screen and (#{$rule}-width: $breakpoint) {
+      @content;
+  }
+}
+
 // 左からフェードイン
 .heading_animation_left {
   opacity: 0;
@@ -24,12 +46,30 @@
 
 // カスタム文字サイズ #2
 .customTextSize_2xl {
-  font-size: 20rem;
+  @include mq(xl) {
+    font-size: 20rem;
+  }
+  @include mq(md) {
+    font-size: 20rem;
+  }
+  font-size: 7rem;
 }
 
 // カスタム文字サイズ #3
 .customTextSize_3xl {
   font-size: 30rem;
+}
+
+// スマホサイズのメイン背景
+.customMainBg {
+  @include mq(md) {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
+  background-color: rgba(255, 255, 255, 0.471);
+  padding: 15px;
+  border-radius: 10px;
 }
 
 // カスタームmargin #1
@@ -85,4 +125,8 @@
 }
 .table_info_list_list{
   margin: 5px 0;
+}
+
+.minusZ {
+  z-index: -10;
 }
