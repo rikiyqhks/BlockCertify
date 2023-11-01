@@ -26,11 +26,7 @@
     "eslint-config-next": "13.4.9",
     "faker": "^6.6.6",
     "next": "13.4.9",
-<<<<<<< HEAD
-    "npm": "^10.1.0",
-=======
     "npm": "^10.0.0",
->>>>>>> 7b350aeb6aa870674f4bf1ec0807c7a78379b1bf
     "postcss": "8.4.25",
     "react": "18.2.0",
     "react-chartjs-2": "^5.2.0",
