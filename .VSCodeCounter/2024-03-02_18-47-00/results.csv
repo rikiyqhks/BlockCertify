@@ -1,0 +1,95 @@
+"filename", "language", "JSON with Comments", "JavaScript", "SQL", "TypeScript", "Markdown", "JSON", "XML", "Solidity", "TypeScript JSX", "CSS", "SCSS", "comment", "blank", "total"
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\.eslintrc.json", "JSON", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 1, 4
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\README.md", "Markdown", 0, 0, 0, 0, 54, 0, 0, 0, 0, 0, 0, 0, 19, 73
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\auth\academy\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 3, 5, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\auth\callback\route.ts", "TypeScript", 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 5, 5, 24
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\auth\login\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 3, 5, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\auth\reset-password\confirm\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 2, 2, 13
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\auth\reset-password\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 3, 5, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\auth\signup\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 3, 5, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\classes\AuthenticationError.ts", "TypeScript", 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\classes\CustomBaseError.ts", "TypeScript", 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 1, 7, 36
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\classes\ErrorMessageMapping.ts", "TypeScript", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\Components.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 107, 11, 17, 135
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\academy.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 171, 0, 0, 25, 15, 211
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\button.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 2, 17
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\confirm-done.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 1, 4, 23
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\confirm.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 121, 0, 0, 6, 7, 134
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\educational-form.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 268, 0, 0, 23, 29, 320
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\educational-login.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 90, 0, 0, 10, 13, 113
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\educational-profile.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 68, 0, 0, 0, 6, 74
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\educational-request.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 77, 0, 0, 0, 6, 83
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\educational-resume.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 203, 0, 0, 0, 3, 206
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\educational.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 212, 0, 0, 2, 12, 226
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\email.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 103, 0, 0, 14, 17, 134
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\footer.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 2, 13
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\graphs.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 47, 0, 0, 0, 4, 51
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\header.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 182, 0, 0, 3, 11, 196
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\login.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 101, 0, 0, 12, 15, 128
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\logout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0, 6, 9, 69
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\main-apeal.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 105, 0, 0, 7, 7, 119
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\main.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 3, 13
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\password.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 105, 0, 0, 10, 13, 128
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\profile.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 93, 0, 0, 10, 12, 115
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\reset-password.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 80, 0, 0, 10, 12, 102
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\scroll-fade-in.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 25, 0, 0, 16, 5, 46
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\scroll-to-top.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 2, 5, 34
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\signup.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 122, 0, 0, 15, 17, 154
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\supabase-listener.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 4, 10, 45
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\youtube.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 0, 0, 3, 20
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\error.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 1, 2, 13
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\globals.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 1, 8
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\hooks\getExistData.ts", "TypeScript", 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 1, 4, 17
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\hooks\getRequestData.ts", "TypeScript", 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 1, 4, 17
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\hooks\getSchoolData.ts", "TypeScript", 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 5, 10, 43
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\hooks\use-intersection-observer.ts", "TypeScript", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 5, 3, 30
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 4, 30
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\loading.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 1, 1, 10
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\not-found.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 1, 5, 25
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 2, 4, 56
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\[id]\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 2, 6, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\confirm\[id]\done\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 2, 6, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\confirm\[id]\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 2, 6, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\form\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 2, 6, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\login\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 2, 6, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 2, 6, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\requests\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 2, 6, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\resume\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 2, 6, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\email\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 3, 5, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 77, 0, 0, 2, 6, 85
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\logout\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 3, 5, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\password\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 3, 5, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\profile\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 2, 6, 26
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\documents\powerpoint image\10856_color.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\documents\powerpoint image\12920_color.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\documents\powerpoint image\15110_color.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\documents\powerpoint image\15117_color.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\documents\powerpoint image\17507_color.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\documents\powerpoint image\943_color.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\lib\database.types.ts", "TypeScript", 0, 0, 0, 260, 0, 0, 0, 0, 0, 0, 0, 0, 2, 262
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\lib\inputForm.types.ts", "TypeScript", 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 1, 20
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\lib\supabase.ts", "TypeScript", 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\next.config.js", "JavaScript", 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 15
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\package-lock.json", "JSON", 0, 0, 0, 0, 0, 11176, 0, 0, 0, 0, 0, 0, 1, 11177
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\package.json", "JSON", 0, 0, 0, 0, 0, 47, 0, 0, 0, 0, 0, 0, 1, 48
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\postcss.config.js", "JavaScript", 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\public\imgs\items\certification.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\public\imgs\items\education.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\public\imgs\items\partnership.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\public\imgs\items\secure.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\public\imgs\items\title.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\README.md", "Markdown", 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 4, 14
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\contracts\EducationRecord.sol", "Solidity", 0, 0, 0, 0, 0, 0, 0, 80, 0, 0, 0, 2, 7, 89
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\contracts\Lock.sol", "Solidity", 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 5, 10, 35
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\hardhat.config.ts", "TypeScript", 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\package-lock.json", "JSON", 0, 0, 0, 0, 0, 7462, 0, 0, 0, 0, 0, 0, 1, 7463
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\package.json", "JSON", 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 1, 8
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\scripts\deploy.ts", "TypeScript", 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 3, 4, 23
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\test\Lock.ts", "TypeScript", 0, 0, 0, 93, 0, 0, 0, 0, 0, 0, 0, 8, 27, 128
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\tsconfig.json", "JSON with Comments", 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\states\atoms\inputAtom.ts", "TypeScript", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 1, 24
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\store\index.ts", "TypeScript", 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 4, 4, 20
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\supabase\seed.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\tailwind.config.js", "JavaScript", 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 20
+"c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\tsconfig.json", "JSON with Comments", 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 29
+"Total", "-", 39, 36, 0, 583, 64, 18695, 11, 100, 2843, 7, 107, 277, 505, 23267

@@ -44,7 +44,7 @@ const EducationalRequest: NextPage = () => {
         {!data && !request ? (
           <Loading />
         ) : (
-          <section className='text-gray-600 body-font bg-gray-100 h-[calc(100vh-60px)]'>
+          <section className='text-gray-600 body-font bg-gray-100'>
             <div className='container px-5 py-24 mx-auto'>
               <div className='flex flex-col text-center w-full mt-20'>
                 {request && (
@@ -54,7 +54,7 @@ const EducationalRequest: NextPage = () => {
                       <InboxStackIcon width={30} />
                       <p><span className='underline hover:cursor-pointer' onClick={() => router.back()}>受信トレイ</span> / {request.studentid}</p>
                     </div>
-                    <div className='h-full flex flex-col items-center border-gray-200 border p-4 rounded-lg bg-gray-50 gap-3'>
+                    <div className='h-full flex flex-col items-center border-gray-200 border p-5 mt-10 rounded-lg bg-gray-50 gap-3'>
                       <img alt='team' className='w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full' src='https://dummyimage.com/80x80'/>
                       <h2 className='text-gray-900 title-font font-medium'>{request.firstname + request.lastname}</h2>
                       <p className='text-gray-500'>{request.submitdate}</p>

@@ -71,7 +71,7 @@ const Header = ({
               <ul className='text-md font-semibold list-none'>
                 {session ? (
                   <li className='flex items-center space-x-3 lg:space-x-20'>
-                    <Link className='text-xs' href='/settings/profile'>
+                    <Link className='text-xs lg:text-lg' href='/settings/profile'>
                       {profile && profile.name + ' さん'}
                     </Link>
                     {openMenu ? (

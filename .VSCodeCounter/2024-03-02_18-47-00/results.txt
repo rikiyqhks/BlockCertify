@@ -1,0 +1,173 @@
+Date : 2024-03-02 18:47:00
+Directory : c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify
+Total : 93 files,  22485 codes, 277 comments, 505 blanks, all 23267 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          5 |     18,695 |          0 |          5 |     18,700 |
+| TypeScript JSX     |         49 |      2,843 |        224 |        355 |      3,422 |
+| TypeScript         |         16 |        583 |         33 |         80 |        696 |
+| SCSS               |          1 |        107 |         11 |         17 |        135 |
+| Solidity           |          2 |        100 |          7 |         17 |        124 |
+| Markdown           |          2 |         64 |          0 |         23 |         87 |
+| JSON with Comments |          2 |         39 |          0 |          2 |         41 |
+| JavaScript         |          3 |         36 |          2 |          4 |         42 |
+| XML                |         11 |         11 |          0 |          0 |         11 |
+| CSS                |          1 |          7 |          0 |          1 |          8 |
+| SQL                |          1 |          0 |          0 |          1 |          1 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                            | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                               |         93 |     22,485 |        277 |        505 |     23,267 |
+| . (Files)                                                                                       |          8 |     11,344 |          2 |         27 |     11,373 |
+| app                                                                                             |         59 |      3,092 |        253 |        410 |      3,755 |
+| app (Files)                                                                                     |          6 |        120 |          5 |         17 |        142 |
+| app\auth                                                                                        |          6 |         95 |         19 |         27 |        141 |
+| app\auth\academy                                                                                |          1 |         18 |          3 |          5 |         26 |
+| app\auth\callback                                                                               |          1 |         14 |          5 |          5 |         24 |
+| app\auth\login                                                                                  |          1 |         18 |          3 |          5 |         26 |
+| app\auth\reset-password                                                                         |          2 |         27 |          5 |          7 |         39 |
+| app\auth\reset-password (Files)                                                                 |          1 |         18 |          3 |          5 |         26 |
+| app\auth\reset-password\confirm                                                                 |          1 |          9 |          2 |          2 |         13 |
+| app\auth\signup                                                                                 |          1 |         18 |          3 |          5 |         26 |
+| app\classes                                                                                     |          3 |         47 |          1 |         11 |         59 |
+| app\components                                                                                  |         27 |      2,463 |        187 |        259 |      2,909 |
+| app\hooks                                                                                       |          4 |         74 |         12 |         21 |        107 |
+| app\settings                                                                                    |         13 |        293 |         29 |         75 |        397 |
+| app\settings (Files)                                                                            |          1 |         77 |          2 |          6 |         85 |
+| app\settings\educational                                                                        |          8 |        144 |         16 |         48 |        208 |
+| app\settings\educational (Files)                                                                |          1 |         18 |          2 |          6 |         26 |
+| app\settings\educational\[id]                                                                   |          1 |         18 |          2 |          6 |         26 |
+| app\settings\educational\confirm                                                                |          2 |         36 |          4 |         12 |         52 |
+| app\settings\educational\confirm\[id]                                                           |          2 |         36 |          4 |         12 |         52 |
+| app\settings\educational\confirm\[id] (Files)                                                   |          1 |         18 |          2 |          6 |         26 |
+| app\settings\educational\confirm\[id]\done                                                      |          1 |         18 |          2 |          6 |         26 |
+| app\settings\educational\form                                                                   |          1 |         18 |          2 |          6 |         26 |
+| app\settings\educational\login                                                                  |          1 |         18 |          2 |          6 |         26 |
+| app\settings\educational\requests                                                               |          1 |         18 |          2 |          6 |         26 |
+| app\settings\educational\resume                                                                 |          1 |         18 |          2 |          6 |         26 |
+| app\settings\email                                                                              |          1 |         18 |          3 |          5 |         26 |
+| app\settings\logout                                                                             |          1 |         18 |          3 |          5 |         26 |
+| app\settings\password                                                                           |          1 |         18 |          3 |          5 |         26 |
+| app\settings\profile                                                                            |          1 |         18 |          2 |          6 |         26 |
+| documents                                                                                       |          6 |          6 |          0 |          0 |          6 |
+| documents\powerpoint image                                                                      |          6 |          6 |          0 |          0 |          6 |
+| lib                                                                                             |          3 |        284 |          0 |          4 |        288 |
+| public                                                                                          |          5 |          5 |          0 |          0 |          5 |
+| public\imgs                                                                                     |          5 |          5 |          0 |          0 |          5 |
+| public\imgs\items                                                                               |          5 |          5 |          0 |          0 |          5 |
+| smart_contract                                                                                  |          9 |      7,719 |         18 |         58 |      7,795 |
+| smart_contract (Files)                                                                          |          5 |      7,510 |          0 |         10 |      7,520 |
+| smart_contract\contracts                                                                        |          2 |        100 |          7 |         17 |        124 |
+| smart_contract\scripts                                                                          |          1 |         16 |          3 |          4 |         23 |
+| smart_contract\test                                                                             |          1 |         93 |          8 |         27 |        128 |
+| states                                                                                          |          1 |         23 |          0 |          1 |         24 |
+| states\atoms                                                                                    |          1 |         23 |          0 |          1 |         24 |
+| store                                                                                           |          1 |         12 |          4 |          4 |         20 |
+| supabase                                                                                        |          1 |          0 |          0 |          1 |          1 |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                        | language           | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\.eslintrc.json                                      | JSON               |          3 |          0 |          1 |          4 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\README.md                                           | Markdown           |         54 |          0 |         19 |         73 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\auth\academy\page.tsx                           | TypeScript JSX     |         18 |          3 |          5 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\auth\callback\route.ts                          | TypeScript         |         14 |          5 |          5 |         24 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\auth\login\page.tsx                             | TypeScript JSX     |         18 |          3 |          5 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\auth\reset-password\confirm\page.tsx            | TypeScript JSX     |          9 |          2 |          2 |         13 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\auth\reset-password\page.tsx                    | TypeScript JSX     |         18 |          3 |          5 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\auth\signup\page.tsx                            | TypeScript JSX     |         18 |          3 |          5 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\classes\AuthenticationError.ts                  | TypeScript         |         10 |          0 |          2 |         12 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\classes\CustomBaseError.ts                      | TypeScript         |         28 |          1 |          7 |         36 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\classes\ErrorMessageMapping.ts                  | TypeScript         |          9 |          0 |          2 |         11 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\Components.module.scss               | SCSS               |        107 |         11 |         17 |        135 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\academy.tsx                          | TypeScript JSX     |        171 |         25 |         15 |        211 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\button.tsx                           | TypeScript JSX     |         15 |          0 |          2 |         17 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\confirm-done.tsx                     | TypeScript JSX     |         18 |          1 |          4 |         23 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\confirm.tsx                          | TypeScript JSX     |        121 |          6 |          7 |        134 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\educational-form.tsx                 | TypeScript JSX     |        268 |         23 |         29 |        320 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\educational-login.tsx                | TypeScript JSX     |         90 |         10 |         13 |        113 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\educational-profile.tsx              | TypeScript JSX     |         68 |          0 |          6 |         74 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\educational-request.tsx              | TypeScript JSX     |         77 |          0 |          6 |         83 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\educational-resume.tsx               | TypeScript JSX     |        203 |          0 |          3 |        206 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\educational.tsx                      | TypeScript JSX     |        212 |          2 |         12 |        226 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\email.tsx                            | TypeScript JSX     |        103 |         14 |         17 |        134 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\footer.tsx                           | TypeScript JSX     |         11 |          0 |          2 |         13 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\graphs.tsx                           | TypeScript JSX     |         47 |          0 |          4 |         51 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\header.tsx                           | TypeScript JSX     |        182 |          3 |         11 |        196 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\login.tsx                            | TypeScript JSX     |        101 |         12 |         15 |        128 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\logout.tsx                           | TypeScript JSX     |         54 |          6 |          9 |         69 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\main-apeal.tsx                       | TypeScript JSX     |        105 |          7 |          7 |        119 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\main.tsx                             | TypeScript JSX     |         10 |          0 |          3 |         13 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\password.tsx                         | TypeScript JSX     |        105 |         10 |         13 |        128 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\profile.tsx                          | TypeScript JSX     |         93 |         10 |         12 |        115 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\reset-password.tsx                   | TypeScript JSX     |         80 |         10 |         12 |        102 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\scroll-fade-in.tsx                   | TypeScript JSX     |         25 |         16 |          5 |         46 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\scroll-to-top.tsx                    | TypeScript JSX     |         27 |          2 |          5 |         34 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\signup.tsx                           | TypeScript JSX     |        122 |         15 |         17 |        154 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\supabase-listener.tsx                | TypeScript JSX     |         31 |          4 |         10 |         45 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\components\youtube.tsx                          | TypeScript JSX     |         17 |          0 |          3 |         20 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\error.tsx                                       | TypeScript JSX     |         10 |          1 |          2 |         13 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\globals.css                                     | CSS                |          7 |          0 |          1 |          8 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\hooks\getExistData.ts                           | TypeScript         |         12 |          1 |          4 |         17 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\hooks\getRequestData.ts                         | TypeScript         |         12 |          1 |          4 |         17 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\hooks\getSchoolData.ts                          | TypeScript         |         28 |          5 |         10 |         43 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\hooks\use-intersection-observer.ts              | TypeScript         |         22 |          5 |          3 |         30 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\layout.tsx                                      | TypeScript JSX     |         26 |          0 |          4 |         30 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\loading.tsx                                     | TypeScript JSX     |          8 |          1 |          1 |         10 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\not-found.tsx                                   | TypeScript JSX     |         19 |          1 |          5 |         25 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\page.tsx                                        | TypeScript JSX     |         50 |          2 |          4 |         56 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\[id]\page.tsx              | TypeScript JSX     |         18 |          2 |          6 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\confirm\[id]\done\page.tsx | TypeScript JSX     |         18 |          2 |          6 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\confirm\[id]\page.tsx      | TypeScript JSX     |         18 |          2 |          6 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\form\page.tsx              | TypeScript JSX     |         18 |          2 |          6 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\login\page.tsx             | TypeScript JSX     |         18 |          2 |          6 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\page.tsx                   | TypeScript JSX     |         18 |          2 |          6 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\requests\page.tsx          | TypeScript JSX     |         18 |          2 |          6 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\educational\resume\page.tsx            | TypeScript JSX     |         18 |          2 |          6 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\email\page.tsx                         | TypeScript JSX     |         18 |          3 |          5 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\layout.tsx                             | TypeScript JSX     |         77 |          2 |          6 |         85 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\logout\page.tsx                        | TypeScript JSX     |         18 |          3 |          5 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\password\page.tsx                      | TypeScript JSX     |         18 |          3 |          5 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\app\settings\profile\page.tsx                       | TypeScript JSX     |         18 |          2 |          6 |         26 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\documents\powerpoint image\10856_color.svg          | XML                |          1 |          0 |          0 |          1 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\documents\powerpoint image\12920_color.svg          | XML                |          1 |          0 |          0 |          1 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\documents\powerpoint image\15110_color.svg          | XML                |          1 |          0 |          0 |          1 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\documents\powerpoint image\15117_color.svg          | XML                |          1 |          0 |          0 |          1 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\documents\powerpoint image\17507_color.svg          | XML                |          1 |          0 |          0 |          1 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\documents\powerpoint image\943_color.svg            | XML                |          1 |          0 |          0 |          1 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\lib\database.types.ts                               | TypeScript         |        260 |          0 |          2 |        262 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\lib\inputForm.types.ts                              | TypeScript         |         19 |          0 |          1 |         20 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\lib\supabase.ts                                     | TypeScript         |          5 |          0 |          1 |          6 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\next.config.js                                      | JavaScript         |         12 |          1 |          2 |         15 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\package-lock.json                                   | JSON               |     11,176 |          0 |          1 |     11,177 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\package.json                                        | JSON               |         47 |          0 |          1 |         48 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\postcss.config.js                                   | JavaScript         |          6 |          0 |          1 |          7 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\public\imgs\items\certification.svg                 | XML                |          1 |          0 |          0 |          1 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\public\imgs\items\education.svg                     | XML                |          1 |          0 |          0 |          1 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\public\imgs\items\partnership.svg                   | XML                |          1 |          0 |          0 |          1 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\public\imgs\items\secure.svg                        | XML                |          1 |          0 |          0 |          1 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\public\imgs\items\title.svg                         | XML                |          1 |          0 |          0 |          1 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\README.md                            | Markdown           |         10 |          0 |          4 |         14 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\contracts\EducationRecord.sol        | Solidity           |         80 |          2 |          7 |         89 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\contracts\Lock.sol                   | Solidity           |         20 |          5 |         10 |         35 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\hardhat.config.ts                    | TypeScript         |         20 |          0 |          3 |         23 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\package-lock.json                    | JSON               |      7,462 |          0 |          1 |      7,463 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\package.json                         | JSON               |          7 |          0 |          1 |          8 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\scripts\deploy.ts                    | TypeScript         |         16 |          3 |          4 |         23 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\test\Lock.ts                         | TypeScript         |         93 |          8 |         27 |        128 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\smart_contract\tsconfig.json                        | JSON with Comments |         11 |          0 |          1 |         12 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\states\atoms\inputAtom.ts                           | TypeScript         |         23 |          0 |          1 |         24 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\store\index.ts                                      | TypeScript         |         12 |          4 |          4 |         20 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\supabase\seed.sql                                   | SQL                |          0 |          0 |          1 |          1 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\tailwind.config.js                                  | JavaScript         |         18 |          1 |          1 |         20 |
+| c:\Users\rikiy\OneDrive\デスクトップ\BlockCertify\tsconfig.json                                       | JSON with Comments |         28 |          0 |          1 |         29 |
+| Total                                                                                           |                    |     22,485 |        277 |        505 |     23,267 |
++-------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

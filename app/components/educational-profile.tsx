@@ -36,7 +36,7 @@ const EducationalProfile: NextPage = () => {
         {!data && !requests ? (
           <Loading />
         ) : (
-          <section className='text-gray-600 body-font bg-gray-100 h-[calc(100vh-60px)]'>
+          <section className='text-gray-600 body-font bg-gray-100'>
             <div className='container px-5 py-24 mx-auto'>
               <div className='flex flex-col text-center w-full mt-20'>
                 <h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900'>{data[0].name}</h1>
